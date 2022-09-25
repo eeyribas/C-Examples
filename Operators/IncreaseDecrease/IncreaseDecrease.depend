@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1663939514 source:d:\github\c programming\operators\increasedecrease\main.c
+	<stdio.h>
+	<conio.h>
+
