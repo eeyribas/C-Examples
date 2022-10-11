@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1664275550 source:d:\github\c programming\loops\continueex\main.c
+	<stdio.h>
+	<conio.h>
+

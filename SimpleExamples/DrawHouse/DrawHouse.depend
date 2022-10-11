@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1665149701 source:d:\github\c programming\simpleexamples\drawhouse\main.c
+	<stdio.h>
+	<conio.h>
+
