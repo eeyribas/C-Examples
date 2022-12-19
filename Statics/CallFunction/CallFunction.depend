@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1671180888 source:d:\github\c programming\statics\callfunction\main.c
+	<stdio.h>
+	<conio.h>
+
