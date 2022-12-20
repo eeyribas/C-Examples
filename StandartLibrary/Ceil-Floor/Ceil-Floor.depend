@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1671573321 source:d:\backup\github calismalar\c programming\standartlibrary\ceil-floor\main.c
+	<stdio.h>
+	<math.h>
+
