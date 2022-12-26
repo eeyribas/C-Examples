@@ -1,5 +1,6 @@
 # C-ProgrammingExamples--Array-Structs-Loops-etc
 Contains C Programming examples.
+IDE: CodeBlocks 20.03
 
 C programmings sections;
 - Arrays = 26 Examples
@@ -13,4 +14,4 @@ C programmings sections;
 - Structs = 8 Examples
 
 There are 201 examples in total. Good repo for new C Programming beginners.
-Licence; Software Developer : Esen EYRİBAŞ
+
