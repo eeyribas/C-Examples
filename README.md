@@ -1,6 +1,6 @@
 # C-ProgrammingExamples--Array-Structs-Loops-etc
 Contains C Programming examples.
-IDE: CodeBlocks 20.03
+IDE: CodeBlocks 20.03 
 
 C programmings sections;
 - Arrays = 26 Examples
