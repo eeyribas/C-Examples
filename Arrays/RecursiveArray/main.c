@@ -17,9 +17,9 @@ int main()
 	return 0;
 }
 
-void Function(int a[], int b){
-	if(b>0)
-    {
+void Function(int a[], int b)
+{
+	if(b>0){
 		Function(&a[1], b-1);
 		printf("%d ", a[0]);
 	}

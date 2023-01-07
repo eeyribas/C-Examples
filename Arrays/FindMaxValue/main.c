@@ -1,14 +1,14 @@
 #include <stdio.h>
- #define MAX 10
 
-int array[MAX];
+#define MAX 10
+
 int FindMax(int x[], int y);
+int array[MAX];
 
 int main()
 {
     int count;
-    for (count = 0; count < MAX; count++)
-    {
+    for(count = 0; count < MAX; count++){
         printf("Enter value: ");
         scanf("%d", &array[count]);
     }
@@ -20,8 +20,7 @@ int main()
 int FindMax(int x[], int y)
 {
     int count, tmp = -12000;
-    for ( count = 0; count < y; count++)
-    {
+    for(count = 0; count < y; count++){
         if (x[count] > tmp)
             tmp = x[count];
     }

@@ -1,7 +1,8 @@
 #include<stdio.h>
 #include<conio.h>
 
-int main(){
+int main()
+{
 	int array[10]={1,23,23,23,12,11,1,23,21,34};
 	int i;
 	printf("%s%13s\n", "Element", "Value");

@@ -23,7 +23,8 @@ int main(){
 	return 0;
 }
 
-int LineerSearch(const int a[], int key, int b){
+int LineerSearch(const int a[], int key, int b)
+{
 	int n;
 	for(n=0; n<SIZE; ++n)
 		if(a[n]==key)

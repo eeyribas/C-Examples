@@ -9,11 +9,9 @@ int main()
 	int i, j;
 
 	printf("%s%13s%17s\n", "Element", "Value", "Graphic");
-	for(i=0; i<SIZE; i++)
-    {
+	for(i=0; i<SIZE; i++){
         printf("%7d%13d  ", i, array[i]);
-        for(j=0; j<array[i]; j++)
-        {
+        for(j=0; j<array[i]; j++){
             printf("%c", '*');
         }
         printf("\n");

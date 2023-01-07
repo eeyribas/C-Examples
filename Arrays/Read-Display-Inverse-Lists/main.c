@@ -35,8 +35,7 @@ void Inverse(int a[],int inverse_b[],int j)
 {
     int i,k;
     k=j-1;
-    for(i=0;i<j;i++)
-    {
+    for(i=0;i<j;i++){
         inverse_b[i]=a[k];
         k--;
     }

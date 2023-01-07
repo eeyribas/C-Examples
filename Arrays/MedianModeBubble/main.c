@@ -9,7 +9,8 @@ void Mod(int[], const int[]);
 void Bubble(int []);
 void Print(const int []);
 
-int main(){
+int main()
+{
 	int freq[10]={0};
 	int answer[SIZE]={1, 2, 3, 4, 5, 6, 7, 8, 9,
 		1,2,3,4,5,6,7,8,9,1,1,2,3,1,4,5,6,7,8,9,
@@ -26,31 +27,30 @@ int main(){
 	return 0;
 }
 
-void Middle(const int answer[]){
+void Middle(const int answer[])
+{
 	int j, sum=0;
 	printf("%s\n%s\n%s\n","********","Middle","********");
-	for(j=0; j<SIZE; j++)
-    {
+	for(j=0; j<SIZE; j++){
        sum += answer[j];
     }
 	printf("Average=%.4f\n\n", (double)sum/SIZE);
 }
 
-void Median(int answer[]){
+void Median(int answer[])
+{
 	printf("\n%s\n%s\n%s\n%s","*******","Median","********","Order Array");
 	Print(answer);
 	Bubble(answer);
 	printf("\n\nElement %d\n","Median %d.elemented.\n","Median %d\n\n", SIZE, SIZE/2, answer[SIZE/2]);
 }
 
-void Bubble(int answer[]){
+void Bubble(int answer[])
+{
 	int t, i, tmp;
-	for(t=1; t<answer; t++)
-    {
-       for(i=0; i<answer-1; i++)
-       {
-            if(answer[i] > answer[i+1])
-            {
+	for(t=1; t<answer; t++){
+       for(i=0; i<answer-1; i++){
+            if(answer[i] > answer[i+1]){
 				tmp=answer[i];
 				answer[i]=answer[i+1];
 				answer[i+1]=tmp;
@@ -61,42 +61,35 @@ void Bubble(int answer[]){
 
 void Mod(int freq[],  const int answer[])
 {
-    int puan,j, h, big=0, mod_value=0;
+    int puan, j, h, big=0, mod_value=0;
     printf("\n%s\n%s\n%s\n","*******","Mod","********");
 
-    for(puan=1; puan<10; puan++)
-    {
+    for(puan=1; puan<10; puan++){
         freq[puan]=0;
     }
-    for(j=0; j<SIZE; j++)
-    {
+    for(j=0; j<SIZE; j++){
         ++freq[answer[j]];
     }
     printf("%s%11s%19s\n\n%54s\n%54s\n\n","Answer","Freq","Histogram"," 1 1 2 2","5 0 5 0 5");
-    for(puan=1; puan<10; puan++)
-    {
+    for(puan=1; puan<10; puan++){
         printf("%8d%11d", puan, freq[puan]);
-        if(freq[puan]>big)
-        {
+        if(freq[puan]>big){
             big=freq[puan];
             mod_value=puan;
         }
     }
 
-    for(h=1; h<=freq[puan]; h++)
-    {
+    for(h=1; h<=freq[puan]; h++){
         printf("*");
     }
-    printf("\n");}
+    printf("\n");
     printf("\nMod : %d Count : %d \n", mod_value, big);
 }
 
 void Print(const int answer[]){
 	int j;
-	for(j=0; j<SIZE; j++)
-    {
-		if(j%20==0)
-		{
+	for(j=0; j<SIZE; j++){
+		if(j%20==0){
 		   printf("\n");
 		}
 		printf("%2d", answer[j]);

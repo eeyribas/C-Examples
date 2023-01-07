@@ -9,12 +9,12 @@ int main()
 	int number;
 
 	printf("Array = {");
-	for(i = 0; i<10; i++)
-	{
+	for(i = 0; i<10; i++){
 		number = rand()%11 - 5;
 		printf(", %d", number);
 	}
 	printf("}\n");
+
 	_getch();
 
 	return 0;

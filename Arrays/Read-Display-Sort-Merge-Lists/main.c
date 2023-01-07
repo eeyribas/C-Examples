@@ -26,7 +26,7 @@ void main()
     Display(c, 10);
 }
 
-void Read(int c[],int i)
+void Read(int c[], int i)
 {
     int j;
     for(j=0;j<i;j++)
@@ -34,7 +34,7 @@ void Read(int c[],int i)
     fflush(stdin);
 }
 
-void Display(int d[],int i)
+void Display(int d[], int i)
 {
     int j;
     for(j=0;j<i;j++)
@@ -42,16 +42,13 @@ void Display(int d[],int i)
     printf("\n");
 }
 
-void Sort(int arr[] ,int k)
+void Sort(int arr[], int k)
 {
     int temp;
     int i, j;
- 	for(i=0;i<k;i++)
-  	{
-        for(j=0;j<k-i-1;j++)
-        {
-            if(arr[j]<arr[j+1])
-            {
+ 	for(i=0;i<k;i++){
+        for(j=0;j<k-i-1;j++){
+            if(arr[j]<arr[j+1]){
                 temp=arr[j];
                 arr[j]=arr[j+1];
                 arr[j+1]=temp;
@@ -63,27 +60,22 @@ void Sort(int arr[] ,int k)
 void Merge(int a[], int b[], int c[], int k)
 {
     int ptra=0,ptrb=0,ptrc=0;
-    while(ptra<k && ptrb<k)
-    {
-        if(a[ptra] > b[ptrb])
-        {
+    while(ptra<k && ptrb<k){
+        if(a[ptra] > b[ptrb]){
             c[ptrc]=a[ptra];
             ptra++;
         }
-        else
-        {
+        else{
             c[ptrc]=b[ptrb];
             ptrb++;
         }
         ptrc++;
     }
-    while(ptra<k)
-   	{
+    while(ptra<k){
         c[ptrc]=a[ptra];
         ptra++;ptrc++;
     }
-    while(ptrb<k)
-    {
+    while(ptrb<k){
         c[ptrc]=b[ptrb];
         ptrb++;  ptrc++;
     }

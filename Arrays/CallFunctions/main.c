@@ -5,7 +5,9 @@
 
 void SetArray(int [], int);
 void SetElement(int);
-int main(){
+
+int main()
+{
 	int a[SIZE]={0, 1, 2, 3, 4};
 	int i;
 	printf("Reference values.\n\n");
@@ -31,7 +33,8 @@ int main(){
 
 void SetArray(int b[], int a){
 	int j;
-	for(j=0; j<a; j++) b[j] *=2;
+	for(j=0; j<a; j++)
+        b[j] *=2;
 }
 
 void SetElement(int a){
