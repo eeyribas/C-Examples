@@ -3,7 +3,8 @@
 
 #define SIZE 10
 
-int main(){
+int main()
+{
 	int a[SIZE]={23,12,11,4,32,43,34, 1, 10, 33};
 	int i, tur, tut;
 
@@ -11,10 +12,8 @@ int main(){
 	for(i=0; i<SIZE; i++)
         printf("%4d", a[i]);
 
-	for(tur=1; tur<SIZE; tur++)
-    {
-        for(i=0; i<SIZE-1; i++)
-        {
+	for(tur=1; tur<SIZE; tur++){
+        for(i=0; i<SIZE-1; i++){
            if(a[i]>a[i+1]){
 				tut = a[i];
 				a[i]=a[i+1];

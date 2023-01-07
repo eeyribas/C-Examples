@@ -1,7 +1,8 @@
 #include<stdio.h>
 #include<conio.h>
 
-int main(){
+int main()
+{
 	int b[]={10, 20, 30, 40};
 	int *b_ptr=b;
 	int i, offset;

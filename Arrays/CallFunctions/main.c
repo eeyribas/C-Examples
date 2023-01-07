@@ -31,12 +31,14 @@ int main()
 	return 0;
 }
 
-void SetArray(int b[], int a){
+void SetArray(int b[], int a)
+{
 	int j;
 	for(j=0; j<a; j++)
         b[j] *=2;
 }
 
-void SetElement(int a){
+void SetElement(int a)
+{
 	printf("SetElement = %d\n", a*=2);
 }
