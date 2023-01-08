@@ -4,23 +4,26 @@
 int Average(int, int);
 void Classify(int);
 
-int main(){
+int main()
+{
 	int vize, finall, average;
 
 	printf("Vize = ");
 	scanf("%d", &vize);
-	printf("Final notunu giriniz= ");
+	printf("Enter Final note = ");
 	scanf("%d", &finall);
-	average=Average(vize, finall);
+	average = Average(vize, finall);
 	Classify(average);
 
 	getch();
 	return 0;
 }
 
-int Average(int a, int b){
+int Average(int a, int b)
+{
 	int av;
 	av = (a*40/100) + (b*60/100);
+
 	return av;
 }
 
@@ -44,5 +47,4 @@ void Classify(int ave)
     else {
 		printf("FF\n");
     }
-
 }

@@ -4,11 +4,10 @@
 
 int Calc(int);
 
-int main(){
-
+int main()
+{
 	int hour;
-	do
-	{
+	do{
         printf("Hour=");
         scanf("%d", &hour);
         printf("Payment = %d $\n\n", Calc(hour));
@@ -18,19 +17,15 @@ int main(){
 	return 0;
 }
 
-int Calc(int a){
-
+int Calc(int a)
+{
 	double pay;
-	if(a<=3)
-    {
-		pay=2;
-	}
-	else if(a<24)
-	{
-		pay = 2 + ((a-3)*1);
-	}
+	if(a <= 3)
+        pay = 2;
+	else if(a < 24)
+        pay = 2 + ((a-3)*1);
 	else
-        pay=25;
+        pay = 25;
 
 	return pay;
 }

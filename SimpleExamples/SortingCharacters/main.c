@@ -3,9 +3,9 @@
 
 void Print(const char*);
 
-int main(){
+int main()
+{
 	char string[]="write the characters in order";
-
 	printf("String:\n");
 	Print(string);
 	printf("\n");
@@ -14,7 +14,7 @@ int main(){
 	return 0;
 }
 
-void Print(const char * pon)
+void Print(const char* pon)
 {
 	for(; *pon !='\0'; pon++)
 		printf("%3c", *pon);

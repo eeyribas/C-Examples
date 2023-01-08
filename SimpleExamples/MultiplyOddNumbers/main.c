@@ -8,7 +8,6 @@ int main()
         if(i % 2 == 1)
             mult = mult*i;
     }
-
     printf("Multiply=%d", mult);
 
     getch();

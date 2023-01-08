@@ -3,12 +3,11 @@
 
 long Factoriel(long);
 
-int main(){
+int main()
+{
 	int i;
 	for(i=1; i<=15; i++)
-    {
         printf("%2d!=%ld\n", i, Factoriel(i));
-    }
 
 	getch();
 	return 0;
@@ -16,6 +15,8 @@ int main(){
 
 long Factoriel(long number)
 {
-	if(number <= 1) return 1;
-	else return (number * Factoriel(number-1));
+	if(number <= 1)
+        return 1;
+	else
+        return (number * Factoriel(number-1));
 }

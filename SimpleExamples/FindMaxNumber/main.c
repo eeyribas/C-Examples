@@ -1,14 +1,15 @@
 #include <stdio.h>
 
-int IMax(int, int);
+int Max(int, int);
 
 int main(void)
 {
-    printf("Max number: %d.\n", IMax(3.0, 5.0));
+    printf("Max number: %d.\n", Max(3.0, 5.0));
+
     return 0;
 }
 
-int IMax(int n, int m)
+int Max(int n, int m)
 {
     int max;
     if (n > m)

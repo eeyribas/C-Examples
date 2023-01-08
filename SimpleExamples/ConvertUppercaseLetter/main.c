@@ -17,8 +17,7 @@ int main()
 
 void ConvertUppercaseLetter(char *string)
 {
-	while(*string != '\0')
-    {
+	while(*string != '\0'){
 		if(islower(*string))
 			*string=toupper(*string);
 		++string;

@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 
-int Multiple(int, int);
+int Mode(int, int);
 
 int main()
 {
@@ -10,13 +10,13 @@ int main()
 	scanf("%d", &a);
 	printf("Enter second number=");
 	scanf("%d", &b);
-	printf("Answer=%d",Multiple(a, b));
+	printf("Answer=%d", Mode(a, b));
 
 	getch();
 	return 0;
 }
 
-int Multiple(int a, int b)
+int Mode(int a, int b)
 {
 	if(b % a == 0)
 		return 1;

@@ -5,9 +5,9 @@ void Gcd(int, int);
 
 int main()
 {
-    int a,b;
-    printf( "First number : " ) ;
-    scanf( "%d", &a ) ;
+    int a, b;
+    printf("First number : ") ;
+    scanf("%d", &a ) ;
     printf("Second number : ");
     scanf("%d", &b);
 
@@ -20,11 +20,9 @@ int main()
 void Gcd(int a, int b)
 {
 	int i;
-    for( i = a + b ; i > 0 ; i --)
-    {
-        if ( a%i == 0 && b%i == 0 )
-        {
-            printf ( "Gcd : %d\n", i ) ;
+    for(i = a + b ; i > 0 ; i--){
+        if(a%i == 0 && b%i == 0){
+            printf ( "Gcd : %d\n", i) ;
             break;
         }
     }

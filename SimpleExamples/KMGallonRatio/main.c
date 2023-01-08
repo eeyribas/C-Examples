@@ -1,9 +1,9 @@
 #include<stdio.h>
 #include<conio.h>
 
-int main(){
-    int km
-    , gallon, count=0;
+int main()
+{
+    int km, gallon, count=0;
     float calc=0;
     float sum=0;
     float ratio=0;
@@ -13,9 +13,8 @@ int main(){
     printf("Km = ");
     scanf("%d", &km);
 
-    while(gallon != -1)
-    {
-        calc=(float) km / gallon;
+    while(gallon != -1){
+        calc = (float)km / gallon;
         printf("Km/gallon = %.2f", calc);
         sum = sum+calc;
         count++;

@@ -10,12 +10,14 @@ int main()
 	scanf("%ld", &number);
 	result = Fibonacci(number);
 	printf("Fibonacci(%ld)=%ld\n", number, result);
+
 	getch();
 	return 0;
 
 }
 
-long Fibonacci(long n){
+long Fibonacci(long n)
+{
 	if(n==0 || n==1)
 		return n;
 	else
