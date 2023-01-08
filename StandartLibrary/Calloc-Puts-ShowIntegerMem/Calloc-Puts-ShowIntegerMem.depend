@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1673210305 source:d:\backup\github\c-programming-examples--array-structs-loops-etc\standartlibrary\calloc-puts-showintegermem\main.c
+	<stdlib.h>
+	<stdio.h>
+

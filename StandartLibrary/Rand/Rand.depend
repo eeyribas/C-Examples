@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1670593706 source:d:\github\c programming\standartlibrary\rand\main.c
-	<stdio.h>
-	<conio.h>
-	<time.h>
-	<stdlib.h>
-
