@@ -1,19 +1,18 @@
 #include<stdio.h>
 #include<conio.h>
 
-int main(){
-int c=5;
+int main()
+{
+    int c=5;
+    printf("%d\n", c);
+    printf("%d\n", c++);
+    printf("%d\n\n", ++c);
 
-printf("%d\n", c);
-printf("%d\n", c++);
-printf("%d\n\n", ++c);
+    c=10;
+    printf("%d\n", c);
+    printf("%d\n", c--);
+    printf("%d\n", --c);
 
-c=10;
-
-printf("%d\n", c);
-printf("%d\n", c--);
-printf("%d\n", --c);
-
-getch();
-return 0;
+    getch();
+    return 0;
 }
