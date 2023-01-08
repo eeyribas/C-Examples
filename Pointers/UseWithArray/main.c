@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 #define MAX 10
 
 int i_array[MAX] = { 0,1,2,3,4,5,6,7,8,9 };

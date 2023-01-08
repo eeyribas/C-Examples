@@ -1,5 +1,7 @@
 #include <stdio.h>
+
 #define MAX 81
+
 int main(void)
 {
     char name[MAX];
