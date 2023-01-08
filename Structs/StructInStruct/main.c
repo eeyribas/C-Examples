@@ -3,8 +3,7 @@
 int length, width;
 long area;
 
-struct coord
-{
+struct coord{
     int x;
 	int y;
 };
@@ -16,7 +15,7 @@ struct rectangle{
 
 int main()
 {
-    printf("\nEnter the top left x coordinate: ");
+    printf("Enter the top left x coordinate: ");
     scanf("%d", &mybox.topleft.x);
     printf("\nEnter the top left y coordinate: ");
     scanf("%d", &mybox.topleft.y);
@@ -29,5 +28,6 @@ int main()
     area = width * length;
     printf("\nThe area is %ld units.\n", area);
 
+    getch();
     return 0;
 }

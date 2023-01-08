@@ -5,13 +5,12 @@ void a(void);
 void b(void);
 void c(void);
 
-int x=1; //Global variable
+int x=1;
 
 int main()
 {
     int x=5;
     printf("X1 = %d \n", x);
-
     {
         int x=7;
         printf("X2 = %d \n", x);
@@ -24,7 +23,6 @@ int main()
     a();
     b();
     c();
-
     printf("X4 = %d \n", x);
 
     getch();
@@ -42,14 +40,14 @@ void a(void)
 void b(void)
 {
     static int x=50;
-    printf("\n Xb %d \n", x);
+    printf("\nXb %d \n", x);
     ++x;
     printf("Xb %d \n", x);
 }
 
 void c(void)
 {
-    printf("\n Xc = %d \n", x);
+    printf("\nXc = %d \n", x);
     x*=10;
     printf("Xc = %d \n", x);
 }

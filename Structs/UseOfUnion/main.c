@@ -1,12 +1,12 @@
-#include <stdio.h>
+#include<stdio.h>
+
 #define CH 'C'
 #define INT 'I'
 #define FLO 'F'
 
 struct Data{
     char type;
-    union data
-    {
+    union data{
         char c;
         int i;
         float f;
@@ -28,14 +28,14 @@ int main()
 	var.common.i = 111;
 	Print(var);
 
+	getch();
     return 0;
 }
 
 void Print(struct Data var)
 {
-    printf("\n\nThe Data...");
-    switch(var.type)
-    {
+    printf("\nThe Data...");
+    switch(var.type){
         case CH:
             printf("%c", var.common.c);
             break;

@@ -21,9 +21,8 @@ int main()
 
 void Create(struct example list[])
 {
- 	for (i = 0; i < 4; i++)
- 	{
-		printf("\nName: ");
+    for (i = 0; i < 4; i++){
+		printf("Name: ");
 		scanf("%s", list[i].name);
 		printf("Surname: ");
  		scanf("%s", list[i].surname);
@@ -35,8 +34,7 @@ void Create(struct example list[])
 void Print(const struct example list[])
 {
     printf("\n\n");
-    for (i = 0; i < 4; i++)
-    {
+    for (i = 0; i < 4; i++){
  		printf("Name: %s %s", list[i].name, list[i].surname);
  		printf("\t\tTelephone: %s\n", list[i].tel);
     }
