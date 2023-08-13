@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
 typedef struct Student{
 	char name[50];
@@ -11,17 +11,17 @@ void Read(char *f_name)
 {
 	FILE *fp;
 	Student student;
-	fp=fopen(f_name, "r");
-	if(fp==NULL){
+	fp = fopen(f_name, "r");
+	if(fp == NULL)
 		printf("File is not open.");
-	}
-	while (!feof(fp)){
+
+	while(!feof(fp)){
 		fscanf(fp, "%s %s %s", &student.name, &student.surname, &student.no);
 		puts("Name = ");
 		puts(student.name);
 		puts("Surname = ");
 		puts(student.surname);
-		puts("TCNO= ");
+		puts("TCNO = ");
 		puts(student.no);
 	}
 }
@@ -30,10 +30,9 @@ void Write(char *f_name)
 {
 	FILE *fp;
 	Student student;
-	fp=fopen(f_name, "w");
-	if(fp==NULL){
+	fp = fopen(f_name, "w");
+	if(fp == NULL)
 		printf("File is not open.");
-	}
 
 	printf("Info \n ");
 	printf("Name : ");
@@ -54,7 +53,7 @@ int main()
 	gets(f_name);
 	printf("1-Write\n2-Read\n Selection = \n");
 	scanf("%d", &select);
-	switch (select){
+	switch(select){
         case 1:
             Write(f_name);
             break;

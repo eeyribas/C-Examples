@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <conio.h>
 
 int main()
 {
@@ -11,5 +12,6 @@ int main()
     else
         fprintf(stderr, "Error file name: %s.\n", file_name);
 
+    getch();
     return(0);
 }

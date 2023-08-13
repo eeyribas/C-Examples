@@ -11,7 +11,7 @@ int main()
         gets(file_name);
         printf("\nEnter a mode (max 3 character): ");
         gets(mode);
-        if((fp = fopen( file_name, mode )) != NULL){
+        if((fp = fopen(file_name, mode)) != NULL){
             printf("\nFile name: %s mode: %s\n", file_name, mode);
             fclose(fp);
             puts("Exit = x");
@@ -19,8 +19,7 @@ int main()
                 break;
             else
                 continue;
-        }
-        else{
+        } else{
             fprintf(stderr, "\nFile name %s mode error: %s.\n", file_name, mode);
             puts("Exit = x");
             if((getc(stdin)) == 'x')

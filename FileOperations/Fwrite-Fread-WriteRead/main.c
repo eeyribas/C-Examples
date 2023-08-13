@@ -5,10 +5,10 @@
 
 int main()
 {
-    int count, array_1[SIZE], array_2[SIZE];
+    int array_1[SIZE], array_2[SIZE];
     FILE *fp;
 
-    for (count = 0; count < SIZE; count++)
+    for(int count = 0; count < SIZE; count++)
         array_1[count] = 2 * count;
 
     if((fp = fopen("direct.txt", "wb")) == NULL){
@@ -31,7 +31,7 @@ int main()
     }
     fclose(fp);
 
-    for (count = 0; count < SIZE; count++)
+    for(int count = 0; count < SIZE; count++)
         printf("%d\t%d\n", array_1[count], array_2[count]);
 
     return(0);

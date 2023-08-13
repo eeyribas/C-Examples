@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <conio.h>
 
 #define BUF_SIZE 100
 
@@ -18,9 +19,10 @@ int main()
 
     while(!feof(fp)){
         fgets(buf, BUF_SIZE, fp);
-        printf("%s",buf);
+        printf("%s", buf);
     }
     fclose(fp);
 
+    getch();
     return(0);
 }
