@@ -1,11 +1,11 @@
 #include <stdio.h>
-#include<conio.h>
+#include <conio.h>
 
 void PrintStrings(char *p[], int n);
 
 int main()
 {
-    char *message[4] = {"kazanir", "calisan", "iyi", "dersine"};
+    char *message[4] = {"win", "person", "good", "lesson"};
     PrintStrings(message, 4);
 
     getch();
@@ -14,7 +14,6 @@ int main()
 
 void PrintStrings(char *p[], int n)
 {
-    int count;
-    for(count = n-1; count >=0; count-=2)
+    for(int count = n - 1; count >=0; count -= 2)
         printf("%s ", p[count]);
 }

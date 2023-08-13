@@ -19,12 +19,10 @@ int main(void)
 
 void SumRows(int ar[][COLS], int rows)
 {
-    int r;
-    int c;
     int tot;
-    for (r = 0; r < rows; r++){
+    for(int r = 0; r < rows; r++){
         tot = 0;
-        for (c = 0; c < COLS; c++)
+        for(int c = 0; c < COLS; c++)
             tot += ar[r][c];
         printf("row %d: sum = %d\n", r, tot);
     }
@@ -32,12 +30,10 @@ void SumRows(int ar[][COLS], int rows)
 
 void SumCols(int ar[][COLS], int rows)
 {
-    int r;
-    int c;
     int tot;
-    for (c = 0; c < COLS; c++){
+    for(int c = 0; c < COLS; c++){
         tot = 0;
-        for (r = 0; r < rows; r++)
+        for(int r = 0; r < rows; r++)
             tot += ar[r][c];
         printf("col %d: sum = %d\n", c, tot);
     }
@@ -45,12 +41,11 @@ void SumCols(int ar[][COLS], int rows)
 
 int Sum2d(int ar[][COLS], int rows)
 {
-    int r;
-    int c;
     int tot = 0;
-    for (r = 0; r < rows; r++)
-        for (c = 0; c < COLS; c++)
+    for(int r = 0; r < rows; r++){
+       for(int c = 0; c < COLS; c++)
             tot += ar[r][c];
+    }
 
     return tot;
  }

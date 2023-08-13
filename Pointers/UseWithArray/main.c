@@ -12,8 +12,7 @@ int main()
     i_ptr = i_array;
     f_ptr = f_array;
 
-    int count;
-    for (count = 0; count < MAX; count++)
+    for(int count = 0; count < MAX; count++)
         printf("%d\t%f\n", *i_ptr++, *f_ptr++);
 
     return 0;

@@ -2,8 +2,8 @@
 
 int main(void)
 {
-    int x, *p, **q;
-    x = 10;
+    int *p, **q;
+    int x = 10;
     p = &x;
     q = &p;
     printf("%d", **q);

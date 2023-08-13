@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
 void Function1(int);
 void Function2(int);
@@ -7,11 +7,11 @@ void Function3(int);
 
 int main()
 {
-	void (*f[3])(int)={Function1, Function2, Function3};
+	void (*f[3])(int) = {Function1, Function2, Function3};
 	int select;
 	printf("Choose a number between 0-2 (Exit = 3)= ");
 	scanf("%d", &select);
-	while(select >= 0 && select<3){
+	while(select >= 0 && select < 3){
 		(*f[select])(select);
 		printf("Choose a number between 0-2 (Exit = 3)= ");
 		scanf("%d", &select);
@@ -24,7 +24,7 @@ int main()
 
 void Function1(int a)
 {
-	printf("%d call Function1\n\n",a);
+	printf("%d call Function1\n\n", a);
 }
 
 void Function2(int b)

@@ -2,12 +2,11 @@
 
 #define MAX 81
 
-int main(void)
+int main()
 {
     char name[MAX];
-    char* ptr;
     printf("Whats your name?\n");
-    ptr = gets(name);
+    char *ptr = gets(name);
     printf("%s? very good name %s!\n", name, ptr);
 
     return 0;

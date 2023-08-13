@@ -16,10 +16,10 @@ int main(void)
 int Sum(int* start, int* end)
 {
     int total = 0;
-    while(start < end)
-    {
+    while(start < end){
         total += *start;
         start++;
     }
+
     return total;
 }
