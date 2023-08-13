@@ -1,10 +1,11 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
-int main(){
+int main()
+{
 	char array[5];
 
-	printf("array=%p\n&array[0]=%p\n""&array=%p\n",array, &array[0], &array);
+	printf("array=%p\n&array[0]=%p\n""&array=%p\n", array, &array[0], &array);
 
 	getch();
 	return 0;

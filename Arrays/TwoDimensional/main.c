@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
 #define STUDENT 3
 #define EXAM 4
@@ -11,16 +11,13 @@ void Write(const int[][EXAM ], int, int);
 
 int main()
 {
-	int stu;
-	const int a[STUDENT][EXAM]={{77,68,86,73},{96,87,89,78},{70,90,86,81}};
+	const int a[STUDENT][EXAM] = {{77,68,86,73},{96,87,89,78},{70,90,86,81}};
 	printf("Array:\n");
 	Write(a, STUDENT, EXAM );
 	printf("\n\nMin. note:%d\nMax. note:%d\n", Minumum(a, STUDENT, EXAM), Maximum(a, STUDENT, EXAM));
 
-	for(stu=0; stu<STUDENT; stu++){
-		printf("Average : %.2f\n", Average(a[stu], EXAM));
-
-	}
+	for(int stu = 0; stu < STUDENT; stu++)
+        printf("Average : %.2f\n", Average(a[stu], EXAM));
 
     getch();
     return 0;
@@ -28,12 +25,11 @@ int main()
 
 int Minumum(const int a[][EXAM], int students, int tests)
 {
-    int i, j, min=100;
-    for(i=0; i<students; i++){
-        for(j=0; j<tests; j++){
-            if(a[i][j]<min){
+    int min = 100;
+    for(int i = 0; i < students; i++){
+        for(int j = 0; j < tests; j++){
+            if(a[i][j]<min)
                 min=a[i][j];
-            }
         }
     }
 
@@ -42,36 +38,33 @@ int Minumum(const int a[][EXAM], int students, int tests)
 
 int Maximum(const int a[][EXAM], int students, int tests)
 {
-	int i, j, max=0;
-	for(i=0; i<students; i++){
-        for(j=0; j<tests; j++){
-           if(a[i][j]>max){
-               max=a[i][j];
-           }
+	int max = 0;
+	for(int i = 0; i < students; i++){
+        for(int j = 0; j < tests; j++){
+            if(a[i][j] > max)
+                max=a[i][j];
         }
     }
+
 	return max;
 }
 
 double Average(const int a[], int tests)
 {
-	int i, sum=0;
-	for(i=0; i<tests; i++){
+	int sum = 0;
+	for(int i = 0; i < tests; i++)
         sum += a[i];
-    }
 
-	return (double)sum/tests;
+	return (double)sum / tests;
 }
 
 void Write(const int a[][EXAM], int students, int tests)
 {
-	int i, j;
 	printf("    [0][1][2][3]");
 
-	for(i=0; i<students; i++){
-		printf("\nStudents Notes[%d]:",i);
-		for(j=0; j<tests; j++){
+	for(int i = 0; i < students; i++){
+		printf("\nStudents Notes[%d]:", i);
+		for(int j = 0; j < tests; j++)
             printf("%-5d", a[i][j]);
-        }
 	}
 }
