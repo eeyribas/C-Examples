@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
 #define SIZE 5
 
@@ -8,18 +8,18 @@ void SetElement(int);
 
 int main()
 {
-	int a[SIZE]={0, 1, 2, 3, 4};
-	int i;
+	int a[SIZE] = {0, 1, 2, 3, 4};
+
 	printf("Reference values.\n\n");
 
 	printf("Original\n");
-	for(i=0; i<SIZE; i++)
+	for(int i = 0; i < SIZE; i++)
         printf("%3d", a[i]);
 	printf("\n");
 
 	SetArray(a, SIZE);
 	printf("\nSet Array\n");
-	for(i=0; i<SIZE; i++)
+	for(int i = 0; i < SIZE; i++)
         printf("%3d", a[i]);
 
 	printf("\n\n\n Settings..\n\n");
@@ -33,9 +33,8 @@ int main()
 
 void SetArray(int b[], int a)
 {
-	int j;
-	for(j=0; j<a; j++)
-        b[j] *=2;
+	for(int j = 0; j < a; j++)
+        b[j] *= 2;
 }
 
 void SetElement(int a)

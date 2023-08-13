@@ -4,16 +4,16 @@
 int main()
 {
 	int A[N] = {7,3,5,8,2,9,4,15,6};
-	int i, j, k, enk;
+	int k, enk;
 
 	printf("Before : ");
-	for(k = 0; k < N; k++)
+	for(int k = 0; k < N; k++)
         printf("%5d ", A[k]);
 
-	for(i = 0; i < N-1; i++){
-		enk = A[N-1];
-		k = N-1;
-        for(j = i; j < (N-1); j++)
+	for(int i = 0; i < N - 1; i++){
+		enk = A[N - 1];
+		k = N - 1;
+        for(int j = i; j < (N - 1); j++)
             if(enk > A[j]){
                 enk = A[j];
                 k = j;

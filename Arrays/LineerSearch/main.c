@@ -1,18 +1,19 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
 #define SIZE 100
 
 int LineerSearch(const int[], int, int);
 
-int main(){
-	int a[SIZE], x, search_value, element;
-	for(x=0; x<SIZE; x++)
-        a[x]=2*x;
+int main()
+{
+	int a[SIZE], search_value, element;
+	for(int x = 0; x < SIZE; x++)
+        a[x] = 2 * x;
 
 	printf("Searh Value = ");
 	scanf("%d", &search_value);
-	element=LineerSearch(a, search_value, SIZE);
+	element = LineerSearch(a, search_value, SIZE);
 
 	if(element != -1)
         printf("Find.");
@@ -25,10 +26,10 @@ int main(){
 
 int LineerSearch(const int a[], int key, int b)
 {
-	int n;
-	for(n=0; n<SIZE; ++n)
-		if(a[n]==key)
+	for(int n = 0; n < SIZE; ++n){
+        if(a[n] == key)
             return n;
+	}
 
 	return -1;
 }

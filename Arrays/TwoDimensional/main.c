@@ -28,8 +28,8 @@ int Minumum(const int a[][EXAM], int students, int tests)
     int min = 100;
     for(int i = 0; i < students; i++){
         for(int j = 0; j < tests; j++){
-            if(a[i][j]<min)
-                min=a[i][j];
+            if(a[i][j] < min)
+                min = a[i][j];
         }
     }
 
@@ -42,7 +42,7 @@ int Maximum(const int a[][EXAM], int students, int tests)
 	for(int i = 0; i < students; i++){
         for(int j = 0; j < tests; j++){
             if(a[i][j] > max)
-                max=a[i][j];
+                max = a[i][j];
         }
     }
 

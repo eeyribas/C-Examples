@@ -9,8 +9,8 @@ int main()
 	for(int i = 0; i < N; i++)
         printf("%5d ",a[i]);
 
-	for(int i = 0; i < N-1; i++) {
-        for(int j = 0; j < N-1; j++) {
+	for(int i = 0; i < N-1; i++){
+        for(int j = 0; j < N-1; j++){
             if(a[j+1] < a[j]){
                 int tmp = a[j];
                 a[j] = a[j+1];
@@ -18,6 +18,7 @@ int main()
             }
         }
 	}
+
     printf("\nAfter: ");
 	for(int i = 0; i < N; i++)
         printf("%5d ",a[i]);
