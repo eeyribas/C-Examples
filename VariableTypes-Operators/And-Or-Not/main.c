@@ -1,10 +1,10 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
 {
-  int a=0;
-  int b=5;
-  int c=-4;
+  int a = 0;
+  int b = 5;
+  int c = -4;
 
   printf("a value %d:\n", a);
   printf("b value %d:\n", b);

@@ -1,12 +1,11 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
 {
-    float a,b,c,d;
-    a = 123.456;
-    b = 123.456e+0;
-    c = 1.23456e+2;
-    d = 1234.56E-1;
+    float a = 123.456;
+    float b = 123.456e+0;
+    float c = 1.23456e+2;
+    float d = 1234.56E-1;
 
     printf("a  = %f\n", a);
     printf("b  = %e\n", b);

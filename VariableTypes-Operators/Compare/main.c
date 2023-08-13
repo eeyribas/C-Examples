@@ -1,8 +1,8 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
 {
-    int a=5,b=6,c=2;
+    int a = 5, b = 6, c = 2;
 
     printf("a < b     : %d\n", a < b);
     printf("a > c     : %d\n", a > c);

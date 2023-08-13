@@ -3,34 +3,34 @@
 int main()
 {
     int a = 7;
-    unsigned int ua = 55000;
+    unsigned int u_a = 55000;
 
     short b = 30000;
-    unsigned short ub = 60000;
+    unsigned short u_b = 60000;
 
     long c = 398162092;
-    unsigned long uc = 4047483649;
+    unsigned long u_c = 4047483649;
 
     char d = 125;
-    unsigned char ud = 252;
+    unsigned char u_d = 252;
 
     double e = 97223.787844;
-    float ue = 223.52;
+    float u_e = 223.52;
 
     printf("a: %d \n", a);
-    printf("ua: %u \n", ua);
+    printf("ua: %u \n", u_a);
 
     printf("b: %d \n", b);
-    printf("ub: %u \n", ub);
+    printf("ub: %u \n", u_b);
 
     printf("c: %ld \n", c);
-    printf("uc: %u \n", uc);
+    printf("uc: %u \n", u_c);
 
     printf("d: %d \n", d);
-    printf("ud: %d \n", ud);
+    printf("ud: %d \n", u_d);
 
     printf("e: %f \n", e);
-    printf("ue: %f \n", ue);
+    printf("ue: %f \n", u_e);
 
     return 0;
 }

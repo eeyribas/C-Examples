@@ -1,27 +1,23 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
 {
-    int i, i1, i2, i3, i4, i5;
-    double r, r1, r2, r3;
+    int i = 25;
+    int i_1 = 25;
+    int i_2 = 25U;
+    int i_3 = 25L;
+    int i_4 = 25UL;
 
-    i = 25;    /* 25, int type */
-    r = 17.2;  /* 17.2, double type */
+    double r = 17.2;
+    double r_1 = 17.2;
+    double r_2 = 17.2L;
+    double r_3 = 17.2F;
 
-    i1 = 25;    /* int           */
-    i2 = 25U;   /* unsigned int  */
-    i3 = 25L;   /* long int      */
-    i4 = 25UL;  /* unsigned long */
-
-    r1 = 17.2;  /* double        */
-    r2 = 17.2L; /* long double   */
-    r3 = 17.2F; /* float         */
-
-    printf("i    = %d   \n", i);
-    printf("i1   = %d   \n", i1);
-    printf("i2   = %u  \n", i2);
-    printf("i3   = %ld  \n", i3);
-    printf("i4   = %lu  \n", i4);
+    printf("i     = %d   \n", i);
+    printf("i_1   = %d   \n", i_1);
+    printf("i_2   = %u  \n", i_2);
+    printf("i_3   = %ld  \n", i_3);
+    printf("i_4   = %lu  \n", i_4);
 
     return 0;
 }

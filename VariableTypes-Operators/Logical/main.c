@@ -3,7 +3,7 @@
 
 int main()
 {
-    int a=3, b=4, i=10, j=2;
+    int a = 3, b = 4, i = 10, j = 2;
 	printf("%d\n", a < b && i < j);
 	printf("%d\n", a > b && i > j);
 	printf("%d\n", a < b || i < j);
