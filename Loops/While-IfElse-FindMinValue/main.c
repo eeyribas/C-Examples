@@ -2,7 +2,7 @@
 
 int Min(int, int);
 
-int main(void)
+int main()
 {
     int number_1, number_2;
     printf("Enter integer (exit = q):\n");

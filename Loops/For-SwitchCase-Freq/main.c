@@ -1,14 +1,13 @@
-#include<stdio.h>
-#include<conio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
 
 int main()
 {
-    int choose, count;
     int freq_1=0, freq_2=0, freq_3=0, freq_4=0, freq_5=0, freq_6=0;
 
-    for(choose=1; choose<=6000; choose++){
-        choose=1+rand()%6;
+    for(int choose = 1; choose <= 6000; choose++){
+        choose = 1 + rand() % 6;
         switch(choose){
             case 1:
                 ++freq_1;

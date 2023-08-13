@@ -1,12 +1,11 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
 int Square(int);
 
 int main()
 {
-    int x;
-    for(x=1; x<=10; x++){
+    for(int x = 1; x <= 10; x++){
         printf("%d", Square(x));
         printf("\n");
     }
@@ -17,5 +16,5 @@ int main()
 
 int Square(int a)
 {
-    return a*a;
+    return a * a;
 }

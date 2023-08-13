@@ -1,14 +1,14 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
 int main()
 {
-    int limit=10;
+    int limit = 10;
 	int number;
-	int single=0;
-	int doubler=0;
-	int i;
-	for(i=0; i<limit; i++){
+	int single = 0;
+	int doubler = 0;
+
+	for(int i = 0; i < limit; i++){
 		printf("Enter number = ");
 		scanf("%d", &number);
 		if(number % 2 == 0)

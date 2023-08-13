@@ -1,10 +1,10 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
 int main()
 {
     int type;
-    int a=0, b=0, c=0, d=0, e=0;
+    int a = 0, b = 0, c = 0, d = 0, e = 0;
     int sum=0;
 
     do{
@@ -40,9 +40,9 @@ int main()
                 printf("1-5 enter number!!!");
                 break;
         }
-    }while(type != 0);
+    } while(type != 0);
 
-    sum=(a*2) + (b*4) + (c*9) + (d*4) + (e*6);
+    sum = (a * 2) + (b * 4) + (c * 9) + (d * 4) + (e * 6);
     printf("\n\nSum=%d", sum);
 
     getch();

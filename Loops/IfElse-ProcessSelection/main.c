@@ -11,13 +11,13 @@ int main()
 	printf("\nEnter two integers : ");
 	scanf("%d %d", &a, &b);
 
-	if(ch=='+')
+	if(ch == '+')
         printf("%d+%d=%d\n", a, b, a + b);
-	else if(ch=='-')
+	else if(ch == '-')
         printf("%d-%d=%d\n", a, b, a - b);
-	else if(ch=='*')
+	else if(ch == '*')
         printf("%d*%d=%d\n", a, b, a * b);
-	else if(ch=='/')
+	else if(ch == '/')
         printf("%d/%d=%d\n", a, b, a / b);
 	else
         printf("You entered an invalid transaction!!!!\n");

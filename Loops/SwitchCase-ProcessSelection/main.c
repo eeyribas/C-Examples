@@ -13,8 +13,7 @@ int main()
 	printf("\nEnter integer : ");
 	scanf("%d", &b);
 
-	switch(ch)
-	{
+	switch(ch) {
         case '+':
             printf("%d+%d=%d\n", a, b, a + b);
             break;

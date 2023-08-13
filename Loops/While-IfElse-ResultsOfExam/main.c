@@ -1,9 +1,9 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
 int main()
 {
-    int pass=0, fail=0, student=1, result;
+    int pass = 0, fail = 0, student = 1, result;
 
     while(student <= 10){
         printf("Enter Pass=1, Fail=2 :\n");

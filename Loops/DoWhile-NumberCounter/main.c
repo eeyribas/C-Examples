@@ -1,12 +1,12 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
 int main()
 {
-    int counter=1;
+    int counter = 1;
     do{
         printf("%d\n", counter);
-    }while(++counter <= 10);
+    } while(++counter <= 10);
 
     getch();
     return 0;

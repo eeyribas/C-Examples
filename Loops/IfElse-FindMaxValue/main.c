@@ -15,5 +15,6 @@ int Max(int n, int m)
         max = n;
     else
         max = m;
+
     return max;
 }

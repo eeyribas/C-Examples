@@ -1,10 +1,10 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
-int main( )
+int main()
 {
-    int x=1,y=4;
-    if(--y==3&&!(x++<=1))
+    int x = 1, y = 4;
+    if(--y == 3 && !(x++ <= 1))
         printf("A\n");
     printf("B\n");
 

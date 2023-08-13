@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
 int main()
 {
@@ -28,7 +28,8 @@ number:
             break;
 	}
 	printf("\nWould you like to try again(e/h)?");
-	if(c=getch()=='e')
+
+	if(c = getch() == 'e')
 		goto number;
 	else
 		printf("BYE");

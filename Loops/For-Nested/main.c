@@ -5,11 +5,8 @@
 
 int main(void)
 {
-    int col;
-    char ch;
-
- 	for (col = 0; col <COLUMN; col++){
-		for (ch = 'A'; ch <('A'+col); ch++){
+ 	for(int col = 0; col < COLUMN; col++){
+		for (char ch = 'A'; ch < ('A' + col); ch++){
             printf("%c", ch);
 		 	printf("\n");
         }

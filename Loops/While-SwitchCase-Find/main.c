@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
 int FindRem(int, int);
 int FindSection(int, int);
@@ -14,7 +14,7 @@ int main()
 	printf("Which option would you prefer?=");
 	scanf("%d", &choose);
 
-	while (choose != 0){
+	while(choose != 0){
         switch (choose){
             case 1:
                 printf("\nNumber = ");
@@ -50,26 +50,30 @@ int main()
 	return 0;
 }
 
-int FindSection(int a, int b){
-	int sec;
-	sec = a/b;
+int FindSection(int a, int b)
+{
+	int sec = a / b;
+
 	return sec;
 }
 
-int FindRem(int c, int d){
-	int rem;
-	rem = c % d;
+int FindRem(int c, int d)
+{
+	int rem = c % d;
+
 	return rem;
 }
 
-int Interval(int number){
-	int a, b, c, d, e;
-	if(number<32767){
-	b=(number % 10000) -c ;
-	c = (number % 1000) - d;
-	d= (number % 100)- e;
-	e= number % 10;
-	printf("  %d  %d  %d  %d",  b, c, d, e);
+int Interval(int number)
+{
+    int c, d, e;
+    if(number < 32767){
+        int b = (number % 10000) - c;
+        c = (number % 1000) - d;
+        d = (number % 100) - e;
+        e = number % 10;
+        printf("  %d  %d  %d  %d",  b, c, d, e);
+	} else {
+	    printf("Enter within the specified range!!!");
 	}
-	else printf("Enter within the specified range!!!");
 }

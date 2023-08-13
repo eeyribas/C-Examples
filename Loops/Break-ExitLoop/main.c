@@ -1,11 +1,11 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
 int main()
 {
     int x;
-    for(x=10; x>=10; x++){
-        if(x==18)
+    for(x = 10; x >= 10; x++){
+        if(x == 18)
             break;
         printf("%d\n", x);
     }
