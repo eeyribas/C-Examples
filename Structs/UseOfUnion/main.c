@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 #define CH 'C'
 #define INT 'I'
@@ -13,7 +13,7 @@ struct Data{
     }common;
 };
 
-void Print( struct Data bilgi );
+void Print(struct Data info);
 
 int main()
 {
@@ -22,7 +22,7 @@ int main()
 	var.common.c = '$';
 	Print(var);
     var.type = FLO;
-    var.common.f = (float) 12345.67890;
+    var.common.f = (float)12345.67890;
     Print(var);
 	var.type = 'x';
 	var.common.i = 111;

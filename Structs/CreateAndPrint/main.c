@@ -1,15 +1,14 @@
 #include <stdio.h>
 
-struct example {
+struct Example{
     char name[20];
 	char surname[20];
     char tel[10];
 };
 
-struct example list[4];
-int i;
-void Create(struct example list[]);
-void Print(const struct example list[]);
+struct Example list[4];
+void Create(struct Example list[]);
+void Print(const struct Example list[]);
 
 int main()
 {
@@ -19,9 +18,9 @@ int main()
     return 0;
 }
 
-void Create(struct example list[])
+void Create(struct Example list[])
 {
-    for (i = 0; i < 4; i++){
+    for(int i = 0; i < 4; i++){
 		printf("Name: ");
 		scanf("%s", list[i].name);
 		printf("Surname: ");
@@ -31,10 +30,10 @@ void Create(struct example list[])
  	}
 }
 
-void Print(const struct example list[])
+void Print(const struct Example list[])
 {
     printf("\n\n");
-    for (i = 0; i < 4; i++){
+    for(int i = 0; i < 4; i++){
  		printf("Name: %s %s", list[i].name, list[i].surname);
  		printf("\t\tTelephone: %s\n", list[i].tel);
     }

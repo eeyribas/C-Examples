@@ -1,21 +1,21 @@
-#include<stdio.h>
-#include<stdio.h>
+#include <stdio.h>
+#include <stdio.h>
 
 #define MAX_NAME     40
 #define MAX_WRITER   40
 #define MAX_BOOK    100
 
-struct book{
+struct Book{
     char name[MAX_NAME];
     char writer[MAX_WRITER];
     float price;
 };
 
-int main(void)
+int main()
 {
-    struct book library[MAX_BOOK];
+    struct Book library[MAX_BOOK];
     int count = 0;
-    int index;
+
     printf("Enter book name: \n");
     printf("Exit: enter\'e.\n");
     while (count < MAX_BOOK && gets(library[count].name) != NULL && library[count].name[0] != '\0'){
@@ -25,16 +25,15 @@ int main(void)
         scanf("%f", &library[count++].price);
         while (getchar() != '\n')
             continue;
-        if (count < MAX_BOOK)
+        if(count < MAX_BOOK)
         printf("Name: \n");
     }
 
-    if (count > 0){
+    if(count > 0){
         printf("Book List:\n");
-        for (index = 0; index < count; index++)
+        for(int index = 0; index < count; index++)
             printf("%s by %s: $%.2f\n", library[index].name, library[index].writer, library[index].price);
-    }
-    else{
+    } else{
         printf("There are no books.\n");
     }
 

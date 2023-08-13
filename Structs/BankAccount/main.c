@@ -2,18 +2,18 @@
 
 #define SIZE 50
 
-struct bank{
+struct Bank{
     char   name[SIZE];
     double bank_deposit;
     char   save[SIZE];
     double save_deposit;
 };
 
-double Sum(const struct bank*);
+double Sum(const struct Bank*);
 
-int main(void)
+int main()
 {
-    struct bank bn = {
+    struct Bank bn = {
         "Credit Bank",
         10.500,
         "note",
@@ -25,7 +25,7 @@ int main(void)
     return 0;
 }
 
-double Sum(const struct bank * money)
+double Sum(const struct Bank *money)
 {
     return(money->bank_deposit + money->save_deposit);
 }

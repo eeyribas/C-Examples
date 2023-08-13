@@ -3,28 +3,28 @@
 int length, width;
 long area;
 
-struct coord{
+struct Coord{
     int x;
 	int y;
 };
 
-struct rectangle{
-    struct coord topleft;
- 		struct coord bottomrt;
-}mybox;
+struct Rectangle{
+    struct Coord top_left;
+    struct Coord bottom_rt;
+}MyBox;
 
 int main()
 {
     printf("Enter the top left x coordinate: ");
-    scanf("%d", &mybox.topleft.x);
+    scanf("%d", &MyBox.top_left.x);
     printf("\nEnter the top left y coordinate: ");
-    scanf("%d", &mybox.topleft.y);
+    scanf("%d", &MyBox.top_left.y);
     printf("\nEnter the bottom right x coordinate: ");
-    scanf("%d", &mybox.bottomrt.x);
+    scanf("%d", &MyBox.bottom_rt.x);
     printf("\nEnter the bottom right y coordinate: ");
-    scanf("%d", &mybox.bottomrt.y);
-    width = mybox.bottomrt.x - mybox.topleft.x;
-    length = mybox.bottomrt.y - mybox.topleft.y;
+    scanf("%d", &MyBox.bottom_rt.y);
+    width = MyBox.bottom_rt.x - MyBox.top_left.x;
+    length = MyBox.bottom_rt.y - MyBox.top_left.y;
     area = width * length;
     printf("\nThe area is %ld units.\n", area);
 

@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
+#include <string.h>
 
 struct Student{
 	char name[30];
@@ -17,7 +17,6 @@ typedef struct Books{
 
 int main(int argc, char *argv[])
 {
-    int i;
 	struct Student Mustafa;
 	struct Student Furkan = {"Furkan Gonc", 21, 'M', "23456789012", 3.59};
 	struct Student *p;
@@ -36,18 +35,23 @@ int main(int argc, char *argv[])
 	(*p).gpa = 2.99;
 	p -> gpa = 1.99;
 
-	for (i = 0; i < 5; i++){
+	for(int i = 0; i < 5; i++){
 		fflush(stdin);
-		printf("Enter student's name: "); gets(students[i].name);
-		printf("Enter %s's age: ", students[i].name); scanf("%d", &students[i].age);
+		printf("Enter student's name: ");
+		gets(students[i].name);
+		printf("Enter %s's age: ", students[i].name);
+		scanf("%d", &students[i].age);
 		fflush(stdin);
-		printf("Enter %s's gender: ", students[i].name); scanf("%c", &students[i].gender);
+		printf("Enter %s's gender: ", students[i].name);
+		scanf("%c", &students[i].gender);
 		fflush(stdin);
-		printf("Enter %s's Number: ", students[i].name); gets(students[i].number);
-		printf("Enter %s's GPA: ", students[i].name); scanf("%lf", &students[i].gpa);
+		printf("Enter %s's Number: ", students[i].name);
+		gets(students[i].number);
+		printf("Enter %s's GPA: ", students[i].name);
+		scanf("%lf", &students[i].gpa);
 	}
 
-	for (i = 0; i < 5; i++){
+	for(int i = 0; i < 5; i++){
 		printf("%30s %3d %2c %11s %4.2lf\n",
 			students[i].name,
 			students[i].age,
