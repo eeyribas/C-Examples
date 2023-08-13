@@ -1,12 +1,11 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
 long Factoriel(long);
 
 int main()
 {
-	int i;
-	for(i=1; i<=15; i++)
+	for(int i = 1; i <= 15; i++)
         printf("%2d!=%ld\n", i, Factoriel(i));
 
 	getch();
@@ -18,5 +17,5 @@ long Factoriel(long number)
 	if(number <= 1)
         return 1;
 	else
-        return (number * Factoriel(number-1));
+        return (number * Factoriel(number - 1));
 }

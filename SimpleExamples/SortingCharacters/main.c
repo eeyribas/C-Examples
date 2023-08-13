@@ -1,11 +1,11 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
 void Print(const char*);
 
 int main()
 {
-	char string[]="write the characters in order";
+	char string[] = "write the characters in order";
 	printf("String:\n");
 	Print(string);
 	printf("\n");
@@ -16,6 +16,6 @@ int main()
 
 void Print(const char* pon)
 {
-	for(; *pon !='\0'; pon++)
+	for(; *pon != '\0'; pon++)
 		printf("%3c", *pon);
 }

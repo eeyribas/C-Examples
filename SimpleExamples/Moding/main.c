@@ -6,7 +6,7 @@ int main()
     int sum = 0;
 
     printf("Enter number (Four Digits) : ");
-    scanf("%d",&number);
+    scanf("%d", &number);
 
     int section = number / 1000;
     sum += section;
@@ -16,7 +16,7 @@ int main()
     sum += section;
     rem = rem % 100;
 
-    section = rem /10;
+    section = rem / 10;
     sum += section;
     rem = rem % 10;
     sum += rem;

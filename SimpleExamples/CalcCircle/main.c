@@ -1,18 +1,17 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
 #define PI 3.14159
 
 int main()
 {
-    int r, env, area, volume;
-
+    int r;
     printf("r = ");
     scanf("%d", &r);
 
-    env = 2 * PI * r;
-    area = PI * r* r;
-    volume = 4 * PI *r*r/3;
+    int env = 2 * PI * r;
+    int area = PI * r* r;
+    int volume = 4 * PI * r * r / 3;
 
     printf("Environment = %d\n", env);
     printf("Area = %d\n", area);

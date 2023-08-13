@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
 #define SIZE 10
 
@@ -10,25 +10,24 @@ int Decrease(int, int);
 
 int main()
 {
-	int select, count, a[SIZE]={1, 23, 34, 2,3, 12,11, 6, 38, 56};
+	int select, a[SIZE] = {1, 23, 34, 2,3, 12,11, 6, 38, 56};
 
 	printf("Enter '1' increase.\nEnter '2' decrease.\n");
 	scanf("%d", &select);
 
 	printf("\nDatas\n");
-	for(count=0; count<SIZE; count++)
+	for(int count = 0; count < SIZE; count++)
 		printf("%5d", a[count]);
 
-	if(select==1){
+	if(select == 1){
 		Bubble(a, SIZE, Decrease);
 		printf("\nDecrease");
-	}
-	else{
+	} else{
 		Bubble(a, SIZE, Increase);
 		printf("\nIncrease");
 	}
 
-	for(count=0; count<SIZE; count++)
+	for(int count = 0; count < SIZE; count++)
 		printf("%5d", a[count]);
 	printf("\n");
 

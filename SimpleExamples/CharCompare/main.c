@@ -1,10 +1,10 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
 int main()
 {
 	char c;
-	int i=0;
+	int i = 0;
 
 	printf("Enter char = ");
 	scanf("%c", &c);

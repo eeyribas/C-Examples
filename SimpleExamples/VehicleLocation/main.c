@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
 {
@@ -20,10 +20,8 @@ int main()
         vehicle2_location += vehicle2_speed;
 
         printf("%d\t\t", hour);
-        (vehicle1_location < distance) ? printf("%d\t\t",
-        vehicle1_location) : printf("have vehicle\t");
-        (vehicle2_location < distance) ? printf("%d", vehicle2_location) :
-        printf("have vehicle");
+        (vehicle1_location < distance) ? printf("%d\t\t", vehicle1_location) : printf("have vehicle\t");
+        (vehicle2_location < distance) ? printf("%d", vehicle2_location) : printf("have vehicle");
         printf("\n");
     } while(vehicle1_location < distance || vehicle2_location < distance);
 

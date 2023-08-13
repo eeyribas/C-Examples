@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
 void Reverse(int );
 
@@ -17,9 +17,9 @@ int main()
 void Reverse(int number)
 {
 	int tmp;
-	while(number>0){
+	while(number > 0){
 		tmp = number % 10;
 		printf("%d", tmp);
-		number = number /10;
+		number = number / 10;
 	}
 }

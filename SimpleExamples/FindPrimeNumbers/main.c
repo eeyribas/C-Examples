@@ -8,7 +8,7 @@ int main()
     printf("Enter number :");
     scanf("%d", &number);
 
-    if(number < 0) {
+    if(number < 0){
         printf("You must enter a positive number!");
         return 0;
     }

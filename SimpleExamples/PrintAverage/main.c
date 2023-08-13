@@ -1,12 +1,12 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
 int main()
 {
-    int new_number, sum=0, average=0, count=0;
-
+    int new_number, sum = 0, average = 0, count = 0;
     printf("Enter new number = ");
     scanf("%d", &new_number);
+
     do{
         sum += new_number;
         count++;

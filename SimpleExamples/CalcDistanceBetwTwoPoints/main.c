@@ -1,6 +1,6 @@
-#include<stdio.h>
-#include<conio.h>
-#include<math.h>
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
 
 double Calc(double, double, double, double);
 
@@ -21,10 +21,10 @@ int main()
 double Calc(double a, double b, double c, double d)
 {
 	double xk, yk, dis, dist;
-	xk=(a-c)*(a-c);
-	yk=(b-d)*(b*d);
-	dis=xk+yk;
-	dist=sqrt(dis);
+	xk = (a - c) * (a - c);
+	yk = (b - d) * (b * d);
+	dis = xk + yk;
+	dist = sqrt(dis);
 
 	return dist;
 }

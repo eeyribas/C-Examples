@@ -1,6 +1,6 @@
-#include<stdio.h>
-#include<conio.h>
-#include<math.h>
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
 
 int Hypotenuse(int, int);
 
@@ -18,12 +18,10 @@ int main()
 
 }
 
-
 int Hypotenuse(int a, int b)
 {
-	double steep, steep_edge;
-	steep = (a*a) + (b*b);
-	steep_edge = sqrt(steep);
+	double steep = (a * a) + (b * b);
+	double steep_edge = sqrt(steep);
 
 	return steep_edge;
 }

@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
 int Method(int, int);
 
@@ -16,8 +16,8 @@ int main()
 
 int Method(int a, int b)
 {
-	if(b==1)
+	if(b == 1)
         return a;
 	else
-        return a + Method(a, b-1);
+        return a + Method(a, b - 1);
 }

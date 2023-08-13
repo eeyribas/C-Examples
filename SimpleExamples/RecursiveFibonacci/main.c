@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
 long Fibonacci(long);
 
@@ -18,8 +18,8 @@ int main()
 
 long Fibonacci(long n)
 {
-	if(n==0 || n==1)
+	if(n == 0 || n == 1)
 		return n;
 	else
-		return Fibonacci(n-1)+Fibonacci(n-2);
+		return Fibonacci(n - 1) + Fibonacci(n - 2);
 }

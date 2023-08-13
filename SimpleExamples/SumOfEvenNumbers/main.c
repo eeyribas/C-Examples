@@ -1,10 +1,10 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
 int main()
 {
-    int i, top=0;
-    for(i=0; i<=4; i++){
+    int top = 0;
+    for(int i = 0; i <= 4; i++){
         if(i % 2 == 0)
             top += i;
     }

@@ -1,6 +1,6 @@
 int main()
 {
-    int list, menu, price_1=0, i=0, price_2=0, list_2;
+    int list, menu, price_1 = 0, i = 0, price_2 = 0, list_2;
     char menu_1, menu_2, menu_3, menu_4, menu_5, menu_6, menu_u;
     char total;
 
@@ -12,9 +12,8 @@ first:
     printf("- press 3 to pay the account, press 4 to exit.\n");
     printf("*****************************************************************\n");
     printf("selection = ");
-    scanf("%d",&list);
-    switch(list)
-    {
+    scanf("%d", &list);
+    switch(list){
     case 1:
 first_menu:
         printf("\t\tMenu\n");
@@ -57,11 +56,10 @@ top_menu:
         printf("[6] drinks \t\t\t(2 $)\n");
         printf("****************************************\n\n");
         printf("selection = ");
-        scanf("%d",&menu);
+        scanf("%d", &menu);
         do
         {
-            switch(menu)
-            {
+            switch(menu){
             case 1:
 menu_1_first:
                 printf("\n[1] cold and hot appetizers \t(8 $)\n");
@@ -69,21 +67,20 @@ menu_1_first:
                 printf("\t[b] salad\n");
                 printf("\t[c] to return to the top menu\n\n");
                 printf("selection = ");
-                menu_1=getche();
+                menu_1 = getche();
                 printf("\n");
-                switch(menu_1)
-                {
+                switch(menu_1){
                 case 'a':
                 {
-                    char order_1[15]= {"ezme"};
-                    price_1+=8;
+                    char order_1[15] = {"ezme"};
+                    price_1 += 8;
                     break;
                 }
                 break;
                 case 'b':
                 {
-                    char order_1[15]= {"salad"};
-                    price_1+=8;
+                    char order_1[15] = {"salad"};
+                    price_1 += 8;
                     break;
                 }
                 break;
@@ -108,35 +105,34 @@ menu_2_first:
                 printf("\t[d] sebze corbasi\n");
                 printf("\t[u] to return to the top menu\n\n");
                 printf("selection = ");
-                menu_2=getche();
+                menu_2 = getche();
                 printf("\n");
-                switch(menu_2)
-                {
+                switch(menu_2){
                 case 'a':
                 {
-                    char order_1[15]= {"ezogelin"};
-                    price_1+=3;
+                    char order_1[15] = {"ezogelin"};
+                    price_1 += 3;
                     break;
                 }
                 break;
                 case 'b':
                 {
-                    char order_1[15]= {"mercimek"};
-                    price_1+=3;
+                    char order_1[15] = {"mercimek"};
+                    price_1 += 3;
                     break;
                 }
                 break;
                 case 'c':
                 {
-                    char order_1[15]= {"iskembe"};
-                    price_1+=3;
+                    char order_1[15] = {"iskembe"};
+                    price_1 += 3;
                     break;
                 }
                 break;
                 case 'd':
                 {
-                    char order_1[15]= {"sebze corbasi"};
-                    price_1+=3;
+                    char order_1[15] = {"sebze corbasi"};
+                    price_1 += 3;
                     break;
                 }
                 break;

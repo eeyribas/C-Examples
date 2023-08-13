@@ -14,9 +14,8 @@ int main(void)
 
 void InterChange(int u, int v)
 {
-    int temp;
     printf("Originally u = %d and v = %d.\n", u , v);
-    temp = u;
+    int temp = u;
     u = v;
     v = temp;
     printf("Now u = %d and v = %d.\n", u, v);
