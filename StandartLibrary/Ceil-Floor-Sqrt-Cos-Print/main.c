@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<math.h>
+#include <stdio.h>
+#include <math.h>
 
 int main()
 {
@@ -11,7 +11,7 @@ int main()
     printf("\nCeil: %lf", ceil(x));
     printf("\nFloor: %lf", floor(x));
 
-    if( x >= 0 )
+    if(x >= 0)
         printf("\nSquart %lf", sqrt(x) );
     else
         printf("\nNegative number" );

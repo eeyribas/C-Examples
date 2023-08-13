@@ -6,15 +6,15 @@
 int main(void)
 {
     int x = 4;
-    int z;
     printf("x = %d\n", x);
-    z = SQUARE(x);
+
+    int z = SQUARE(x);
     printf("Evaluating SQUARE(x): ");
     PR(z);
     printf("Evaluating SQUARE(x+2): ");
-    PR(SQUARE(x+2));
+    PR(SQUARE(x + 2));
     printf("Evaluating 100/SQUARE(2): ");
-    PR(100/SQUARE(2));
+    PR(100 / SQUARE(2));
     printf("x is %d.\n", x);
     printf("Evaluating SQUARE(++x): ");
     PR(SQUARE(++x));

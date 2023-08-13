@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 #define DEF "#define"
 
 int main(void)
@@ -10,7 +11,7 @@ int main(void)
     puts(str_1);
     puts(str_2);
     puts(&str_1[5]);
-    puts(str_2+4);
+    puts(str_2 + 4);
 
     return 0;
 }

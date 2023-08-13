@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<math.h>
+#include <stdio.h>
+#include <math.h>
 
 int main()
 {
@@ -7,6 +7,7 @@ int main()
     printf("Enter number : ");
     scanf("%d",&a);
     printf("\n");
+
     float b = sqrt(a);
     int c = fabs(b);
     int d = c * c;

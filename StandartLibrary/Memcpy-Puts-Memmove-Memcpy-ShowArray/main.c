@@ -1,6 +1,6 @@
-#include<stdio.h>
-#include<string.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
 #define SIZE 10
 
@@ -32,8 +32,7 @@ int main()
 
 void ShowArray(const int ar[], int n)
 {
-    int i;
-    for(i = 0; i < n; i++)
+    for(int i = 0; i < n; i++)
         printf("%d ", ar[i]);
     putchar('\n');
 }

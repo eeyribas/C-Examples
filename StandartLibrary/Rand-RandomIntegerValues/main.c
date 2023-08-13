@@ -1,12 +1,11 @@
-#include<stdio.h>
-#include<conio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
 
 int main()
 {
-	int i;
-	for(i=1; i<=20; i++){
-		printf("%10d", 1+(rand() % 6));
+	for(int i = 1; i <= 20; i++){
+		printf("%10d", 1 + (rand() % 6));
 		if(i % 5 == 0)
             printf("\n");
 	}

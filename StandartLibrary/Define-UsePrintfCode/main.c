@@ -1,8 +1,8 @@
-#include<stdio.h>
+#include <stdio.h>
 
 #define TWO 2
 #define OW "WORDSSS"
-#define FOUR  TWO*TWO
+#define FOUR  TWO * TWO
 #define PX printf("X is %d.\n", x)
 #define FMT  "X is %d.\n"
 

@@ -3,22 +3,22 @@
 #include <string.h>
 #define TSIZE    45
 
-struct film
+struct Film
 {
     char title[TSIZE];
     int rating;
-    struct film * next;
+    struct Film *next;
 };
 
 int main(void)
 {
-    struct film *head = NULL;
-    struct film *prev, *current;
+    struct Film *head = NULL;
+    struct Film *prev, *current;
     char input[TSIZE];
 
     puts("Enter first movie title:");
-    while (gets(input) != NULL && input[0] != '\0'){
-        current = (struct film *)malloc(sizeof(struct film));
+    while(gets(input) != NULL && input[0] != '\0'){
+        current = (struct Film *)malloc(sizeof(struct Film));
         if (head == NULL)
             head = current;
         else
@@ -38,13 +38,13 @@ int main(void)
     else
         printf ("Here is the movie list:\n");
     current = head;
-    while (current != NULL){
+    while(current != NULL){
         printf("Movie: %s  Rating: %d\n", current->title, current->rating);
         current = current->next;
     }
 
     current = head;
-    while (current != NULL){
+    while(current != NULL){
         free(current);
         current = current->next;
     }

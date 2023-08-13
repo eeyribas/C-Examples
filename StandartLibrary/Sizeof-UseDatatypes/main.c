@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
 int main()
 {
@@ -10,7 +10,7 @@ int main()
 	float f;
 	double d;
 	long double ld;
-	int array[20], *ptr=array;
+	int array[20], *ptr = array;
 
 	printf("sizeof c=%d"
 		"\tsizeof(char)=%d"

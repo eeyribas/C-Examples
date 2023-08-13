@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 char* message_1 = "C";
 char* message_2 = "is the";

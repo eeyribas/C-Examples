@@ -4,7 +4,7 @@
 #define ANSWER "word"
 #define MAX 40
 
-int main(void)
+int main()
 {
     char tmp[MAX];
     puts("Answer?");

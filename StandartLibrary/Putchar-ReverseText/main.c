@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
 int main()
 {
@@ -18,12 +18,9 @@ int main()
 
 void Reverse(const char *const s)
 {
-	if(s[0] == '\0')
-    {
+	if(s[0] == '\0'){
         return;
-    }
-	else
-    {
+    } else{
 		Reverse(&s[1]);
 		putchar(s[0]);
 	}
