@@ -6,13 +6,12 @@
 int main()
 {
 	int s[SIZE];
-
-	for(int j = 0; j < SIZE; j++)
-        s[j] = 2 + 2 * j;
+	for (int i = 0; i < SIZE; i++)
+        s[i] = 2 + 2 * i;
 
 	printf("%s%13s\n", "Element", "Value");
-	for(int j = 0; j < SIZE; j++)
-        printf("%7d%14d\n", j, s[j]);
+	for (int i = 0; i < SIZE; i++)
+        printf("%7d%14d\n", i, s[i]);
 
 	getch();
 	return 0;

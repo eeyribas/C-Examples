@@ -4,9 +4,8 @@
 int main()
 {
     float numbers[5], sum = 0.0;
-
-	for(int i=0; i<5; i++) {
-        printf("%d. number : ", i+1);
+	for (int i = 0; i < 5; i++) {
+        printf("%d. number : ", i + 1);
         scanf("%f", &numbers[i]);
 		sum += numbers[i];
 	}

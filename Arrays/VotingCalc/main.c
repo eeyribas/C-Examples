@@ -6,15 +6,17 @@
 
 int main()
 {
-	int ans[ANSWER] = {1,1,2,3,2,2,2,5,6,7,8, 9,10,1,1,1,3,3,3,1,1,3,4,6,4,5,6,6,8,1,2,3,5,7,9,9,9,10,1,5};
+	int ans[ANSWER] = {1, 1, 2, 3, 2, 2, 2, 5, 6, 7, 8, 9, 10,
+                       1, 1, 1, 3, 3, 3, 1, 1, 3, 4, 6, 4, 5,
+                       6, 6, 8, 1, 2, 3, 5, 7, 9, 9, 9, 10, 1, 5};
 	int freq[FREQ] = {0};
 
-	for(int student_answer = 0; student_answer < ANSWER; student_answer++)
-        ++freq[ans[student_answer]];
+	for (int i = 0; i < ANSWER; i++)
+        ++freq[ans[i]];
 
 	printf("%s%13s\n", "Voting", "Freq");
-	for(int voting = 1; voting < FREQ; voting++)
-       printf("%6d%14d\n", voting, freq[voting]);
+	for (int i = 1; i < FREQ; i++)
+       printf("%6d%14d\n", i, freq[i]);
 
 	getch();
 	return 0;

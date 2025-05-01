@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1746110979 source:d:\backup\github\c-examples\arrays\arrayaddress\main.c
+	<stdio.h>
+	<conio.h>
+

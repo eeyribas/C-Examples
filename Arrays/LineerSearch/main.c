@@ -8,14 +8,14 @@ int LineerSearch(const int[], int, int);
 int main()
 {
 	int a[SIZE], search_value, element;
-	for(int x = 0; x < SIZE; x++)
+	for (int x = 0; x < SIZE; x++)
         a[x] = 2 * x;
 
 	printf("Searh Value = ");
 	scanf("%d", &search_value);
 	element = LineerSearch(a, search_value, SIZE);
 
-	if(element != -1)
+	if (element != -1)
         printf("Find.");
 	else
         printf("Not find.");
@@ -24,10 +24,10 @@ int main()
 	return 0;
 }
 
-int LineerSearch(const int a[], int key, int b)
+int LineerSearch(const int a[], int key, int size)
 {
-	for(int n = 0; n < SIZE; ++n){
-        if(a[n] == key)
+	for (int n = 0; n < size; n++) {
+        if (a[n] == key)
             return n;
 	}
 

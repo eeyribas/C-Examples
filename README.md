@@ -3,7 +3,7 @@ Contains C Programming examples.
 IDE: CodeBlocks 20.03 
 
 C programmings sections;
-- Arrays = 33 Examples
+- Arrays = 30 Examples
 - File Operations = 9 Examples
 - Loops = 34 Examples
 - Pointers = 19 Examples
