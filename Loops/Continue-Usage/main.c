@@ -3,12 +3,12 @@
 
 int main()
 {
-    for(int x = 1; x <= 10; x++){
-        if(x == 5)
+    for (int i = 1; i <= 10; i++) {
+        if (i == 5)
             continue;
-        printf("%d\n", x);
+        printf("%d\n", i);
     }
-    printf("\n continue...\n");
+    printf("\nContinue...\n");
 
     getch();
     return 0;

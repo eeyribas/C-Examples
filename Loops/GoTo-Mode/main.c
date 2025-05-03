@@ -4,18 +4,18 @@
 int main()
 {
     int limit = 10;
-	int number;
+	int number = 0;
 	int single = 0;
 	int doubler = 0;
 
-	for(int i = 0; i < limit; i++){
+	for (int i = 0; i < limit; i++) {
 		printf("Enter number = ");
 		scanf("%d", &number);
-		if(number % 2 == 0)
+		if (number % 2 == 0)
             doubler++;
-		if(number % 2 == 1)
+		if (number % 2 == 1)
             single++;
-		if(number == 0)
+		if (number == 0)
             goto Last;
 	}
 

@@ -4,8 +4,8 @@
 int main()
 {
     int sum = 0;
-    for(int value = 2; value <= 100; value += 2)
-        sum += value;
+    for (int i = 2; i <= 100; i += 2)
+        sum += i;
     printf("%d", sum);
 
     getch();

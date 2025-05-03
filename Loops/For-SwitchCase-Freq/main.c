@@ -4,11 +4,11 @@
 
 int main()
 {
-    int freq_1=0, freq_2=0, freq_3=0, freq_4=0, freq_5=0, freq_6=0;
+    int freq_1 = 0, freq_2 = 0, freq_3 = 0, freq_4 = 0, freq_5 = 0, freq_6 = 0;
 
-    for(int choose = 1; choose <= 6000; choose++){
-        choose = 1 + rand() % 6;
-        switch(choose){
+    for (int i = 1; i <= 6000; i++) {
+        i = 1 + rand() % 6;
+        switch (i) {
             case 1:
                 ++freq_1;
                 break;

@@ -4,7 +4,7 @@
 int main(void)
 {
     char ch;
-    for(int i = 0, ch = 'M'; i < 3; i++, ch -= 3 * i)
+    for (int i = 0, ch = 'M'; i < 3; i++, ch -= 3 * i)
         printf("%c", ch);
 
     getch();

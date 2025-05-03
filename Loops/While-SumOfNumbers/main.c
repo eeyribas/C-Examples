@@ -3,8 +3,8 @@
 
 int main()
 {
-    int x = 1, sum = 0, y;
-    while(x <= 10){
+    int x = 1, y, sum = 0;
+    while (x <= 10) {
         y = x * x;
         printf("%d\n", y);
         sum += y;

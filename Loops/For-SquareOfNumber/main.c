@@ -5,7 +5,7 @@ int Square(int);
 
 int main()
 {
-    for(int x = 1; x <= 10; x++){
+    for (int x = 1; x <= 10; x++) {
         printf("%d", Square(x));
         printf("\n");
     }

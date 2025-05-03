@@ -3,14 +3,14 @@
 
 int main()
 {
-	int down_limit = 0, up_limit = 0, square, sum = 0;
+	int down_limit = 0, up_limit = 0, sum = 0;
 	printf("Down Limit = ");
 	scanf("%d", &down_limit);
 	printf("Up Limit = ");
 	scanf("%d", &up_limit);
 
-	do{
-		square = down_limit * down_limit;
+	do {
+		int square = down_limit * down_limit;
 		sum = sum + square;
 		down_limit++;
 	} while(down_limit <= up_limit);

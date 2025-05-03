@@ -6,8 +6,8 @@
 
 int main()
 {
-	for(int i = 0; i < ROW; i++){
-		for(char ch = 'A'; ch < ('A' + CHARS); ch++)
+	for (int i = 0; i < ROW; i++) {
+		for (char ch = 'A'; ch < ('A' + CHARS); ch++)
             printf("%c", ch);
 		printf("\n\n");
 	}

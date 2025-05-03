@@ -5,6 +5,8 @@ int Max(int, int);
 int main(void)
 {
     printf("Numbers: %d and %d Max: %d.\n", 3, 5, Max(3.0, 5.0));
+
+    getch();
     return 0;
 }
 

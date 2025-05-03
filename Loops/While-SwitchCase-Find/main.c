@@ -8,14 +8,14 @@ int Interval(int);
 int main()
 {
 	int a, b, c, d, e, choose;
-	printf("\n\n1-Finding the interval of a number\n");
-	printf("2-Finding the remainder of a number\n");
-	printf("3-Write a number in the entered range(1-32767)\n");
-	printf("Which option would you prefer?=");
+	printf("1 - Finding the interval of a number\n");
+	printf("2 - Finding the remainder of a number\n");
+	printf("3 - Write a number in the entered range (1 - 32767)\n");
+	printf("Which option would you prefer? = ");
 	scanf("%d", &choose);
 
-	while(choose != 0){
-        switch (choose){
+	while (choose != 0) {
+        switch (choose) {
             case 1:
                 printf("\nNumber = ");
                 scanf("%d", &a);
@@ -31,18 +31,18 @@ int main()
                 printf("%d", FindRem(c, d));
                 break;
             case 3:
-                printf("\nNumber =");
+                printf("\nNumber = ");
                 scanf("%d", &e);
-                printf("", Interval(e));
+                printf(" ", Interval(e));
                 break;
             default:
                 printf("1, 2, 3) enter number. Error!!!");
                 break;
         }
-        printf("\n\n1-Finding the interval of a number\n");
-        printf("2-Finding the remainder of a number\n");
-        printf("3-Write a number in the entered range(1-32767)\n");
-        printf("Which option would you prefer?=");
+        printf("\n\n1 - Finding the interval of a number\n");
+        printf("2 - Finding the remainder of a number\n");
+        printf("3 - Write a number in the entered range (1 - 32767)\n");
+        printf("Which option would you prefer? = ");
         scanf("%d", &choose);
 	}
 
@@ -67,7 +67,7 @@ int FindRem(int c, int d)
 int Interval(int number)
 {
     int c, d, e;
-    if(number < 32767){
+    if (number < 32767) {
         int b = (number % 10000) - c;
         c = (number % 1000) - d;
         d = (number % 100) - e;

@@ -6,7 +6,7 @@ int Fill(int);
 int main()
 {
     int number;
-    printf("Enter number: ");
+    printf("Enter number : ");
     scanf(" %d", &number);
     printf(" ", Fill(number));
 
@@ -16,10 +16,10 @@ int main()
 
 int Fill(int number)
 {
-	for(int i = 1; i <= number; i += 2){
-        for(int k = 0; k <(number - i) / 2; k++){
+	for (int i = 1; i <= number; i += 2) {
+        for (int j = 0; j <(number - i) / 2; j++) {
             printf(" ");
-            for(int j = 0; j < i; j++)
+            for (int k = 0; k < i; k++)
                 printf("#");
             printf("\n");
         }

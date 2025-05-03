@@ -4,11 +4,11 @@
 int main()
 {
     int x = 1, y = 4;
-    if(--y == 3 && !(x++ <= 1))
+    if (--y == 3 && !(x++ <= 1))
         printf("A\n");
     printf("B\n");
 
-    if(-!!x)
+    if (-!!x)
         printf("C\n");
 
     getch();

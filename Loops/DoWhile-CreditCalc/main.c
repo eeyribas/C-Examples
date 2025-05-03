@@ -3,16 +3,17 @@
 
 int main()
 {
-    int account_no, credit, credit_calc=0;
+    int account_no = 0;
 
-    do{
+    do {
+        int credit = 0;
         printf("Account no = ");
         scanf("%d", &account_no);
         printf("Credit Limit = ");
         scanf("%d", &credit);
-        credit_calc = credit / 2;
+        int credit_calc = credit / 2;
         printf("\nCredit Calc = %d\n\n", credit_calc);
-    }while(account_no != 0);
+    } while(account_no != 0);
 
     getch();
     return 0;

@@ -6,11 +6,11 @@ int main()
     int a;
 	char c;
 
-number:
-	printf("\nEnter number=");
+Number:
+	printf("\nEnter number = ");
 	scanf("%d", &a);
 
-	switch (a){
+	switch (a) {
         case 1:
             printf("One\n");
             break;
@@ -27,10 +27,10 @@ number:
             printf("Exception!");
             break;
 	}
-	printf("\nWould you like to try again(e/h)?");
+	printf("\nWould you like to try again (e / h) ?");
 
-	if(c = getch() == 'e')
-		goto number;
+	if (c = getch() == 'e')
+		goto Number;
 	else
 		printf("BYE");
 
