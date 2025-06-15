@@ -7,7 +7,7 @@ int main()
     int *ptr;
     ptr = array;
 
-    for(int index = 0; index < 7;){
+    for (int index = 0; index < 7;) {
         printf("%d\t%d\n", array[index], *ptr);
         index += 2;
         ptr += 1;

@@ -3,15 +3,15 @@
 
 int main()
 {
-    int zippo[4][2] = {{2,4}, {6,8}, {1,3}, {5, 7}};
-    printf("zippo = %p, zippo + 1 = %p\n", zippo, zippo + 1);
-    printf("zippo[0] = %p, zippo[0] + 1 = %p\n", zippo[0], zippo[0] + 1);
-    printf("*zippo = %p, *zippo + 1 = %p\n", *zippo, *zippo + 1);
-    printf("zippo[0][0] = %d\n", zippo[0][0]);
-    printf("*zippo[0] = %d\n", *zippo[0]);
-    printf("**zippo = %d\n", **zippo);
-    printf("zippo[2][1] = %d\n", zippo[2][1]);
-    printf("*(*(zippo+2) + 1) = %d\n", *(*(zippo+2) + 1));
+    int array[4][2] = {{2, 4}, {6, 8}, {1, 3}, {5, 7}};
+    printf("array = %p, array + 1 = %p\n", array, array + 1);
+    printf("array[0] = %p, array[0] + 1 = %p\n", array[0], array[0] + 1);
+    printf("*array = %p, *array + 1 = %p\n", *array, *array + 1);
+    printf("array[0][0] = %d\n", array[0][0]);
+    printf("*array[0] = %d\n", *array[0]);
+    printf("**array = %d\n", **array);
+    printf("array[2][1] = %d\n", array[2][1]);
+    printf("*(*(array + 2) + 1) = %d\n", *(*(array + 2) + 1));
 
     getch();
     return 0;

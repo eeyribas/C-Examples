@@ -14,6 +14,6 @@ int main()
 
 void PrintStrings(char *p[], int n)
 {
-    for(int count = n - 1; count >=0; count -= 2)
-        printf("%s ", p[count]);
+    for (int i = n - 1; i >=0; i -= 2)
+        printf("%s ", p[i]);
 }
