@@ -4,18 +4,17 @@
 int main()
 {
     int random_array[10][10][10];
-    int a, b, c;
 
-    for (a = 0; a < 10; a++) {
-        for (b = 0; b < 10; b++) {
-			for (c = 0; c < 10; c++)
+    for (int a = 0; a < 10; a++) {
+        for (int b = 0; b < 10; b++) {
+			for (int c = 0; c < 10; c++)
                 random_array[a][b][c] = rand();
         }
     }
 
-    for (a = 0; a < 10; a++) {
-        for (b = 0; b < 10; b++) {
-            for (c = 0; c < 10; c++) {
+    for (int a = 0; a < 10; a++) {
+        for (int b = 0; b < 10; b++) {
+            for (int c = 0; c < 10; c++) {
                 printf("\nRandom_array[%d][%d][%d] = ", a, b, c);
                 printf("%d", random_array[a][b][c]);
             }

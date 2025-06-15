@@ -3,26 +3,27 @@
 #define MAX 10
 
 int FindMax(int x[], int y);
-int array[MAX];
 
 int main()
 {
-    for (int count = 0; count < MAX; count++) {
+    int array[MAX];
+
+    for (int i = 0; i < MAX; i++) {
         printf("Enter value: ");
-        scanf("%d", &array[count]);
+        scanf("%d", &array[i]);
     }
-    printf("\n\n Max Value= %d\n", FindMax(array, MAX));
+    printf("\n\n Max Value = %d\n", FindMax(array, MAX));
 
     getch();
     return 0;
 }
 
-int FindMax(int x[], int y)
+int FindMax(int array[], int size)
 {
     int tmp = -12000;
-    for (int count = 0; count < y; count++) {
-        if (x[count] > tmp)
-            tmp = x[count];
+    for (int i = 0; i < size; i++) {
+        if (array[i] > tmp)
+            tmp = array[i];
     }
 
     return tmp;

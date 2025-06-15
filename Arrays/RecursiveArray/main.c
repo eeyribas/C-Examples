@@ -7,19 +7,19 @@ void Function(int[], int);
 
 int main()
 {
-	int a[SIZE] = {32, 22, 12, 123, 43, 5, 6, 11, 10, 67};
+	int array[SIZE] = {32, 22, 12, 123, 43, 5, 6, 11, 10, 67};
 	printf("Array elements : \n");
-	Function(a, SIZE);
+	Function(array, SIZE);
 	printf("\n");
 
 	getch();
 	return 0;
 }
 
-void Function(int a[], int b)
+void Function(int array[], int size)
 {
-	if (b > 0) {
-		Function(&a[1], b - 1);
-		printf("%d ", a[0]);
+	if (size > 0) {
+		Function(&array[1], size - 1);
+		printf("%d ", array[0]);
 	}
 }

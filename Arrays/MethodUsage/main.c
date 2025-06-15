@@ -3,23 +3,23 @@
 
 #define LENGTH 10
 
-int Method(int [], int);
+int Method(int array[], int size);
 
 int main()
 {
-	int a[LENGTH] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+	int array[LENGTH] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
-	int sum = Method(a, LENGTH);
+	int sum = Method(array, LENGTH);
 	printf("Array values (sum) : %d\n", sum);
 
 	getch();
 	return 0;
 }
 
-int Method(int b[], int a)
+int Method(int array[], int size)
 {
-	if (a == 1)
-		return b[0];
+	if (size == 1)
+		return array[0];
 	else
-		return b[a - 1] + Method(b, a - 1);
+		return array[size - 1] + Method(array, size - 1);
 }
