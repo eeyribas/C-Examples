@@ -5,8 +5,8 @@ int Square(int);
 
 int main()
 {
-    for (int x = 1; x <= 10; x++) {
-        printf("%d", Square(x));
+    for (int i = 1; i <= 10; i++) {
+        printf("%d", Square(i));
         printf("\n");
     }
 
@@ -14,7 +14,7 @@ int main()
     return 0;
 }
 
-int Square(int a)
+int Square(int value)
 {
-    return a * a;
+    return value * value;
 }

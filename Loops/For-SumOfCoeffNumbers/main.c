@@ -7,7 +7,7 @@ int main()
     printf("How many numbers do you want = ");
     scanf("%d", &number);
 
-    int number, a = 100, sum = 0;
+    int a = 100, sum = 0;
     for (int i = 1; i <= number; i++)
         sum += a * i;
     printf("\nSum = %d", sum);

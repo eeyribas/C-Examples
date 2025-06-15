@@ -8,7 +8,7 @@ int main()
 	scanf("%d", &working_hour);
 
 	while (working_hour != -1) {
-        printf("Working hour wage =");
+        printf("Working hour wage = ");
         scanf("%d", &normal_wage);
         if (working_hour > 40) {
             shift = working_hour - 40;

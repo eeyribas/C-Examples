@@ -76,4 +76,6 @@ int Interval(int number)
 	} else {
 	    printf("Enter within the specified range!!!");
 	}
+
+	return number;
 }

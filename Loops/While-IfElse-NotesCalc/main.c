@@ -4,7 +4,7 @@
 int main()
 {
     int sum = 0, note, count = 0;
-    printf("Note (Exit = -1) = \n ");
+    printf("Note (Exit = -1) = \n");
     scanf("%d", &note);
 
     while (note != -1) {
@@ -16,7 +16,7 @@ int main()
 
     if (count != 0) {
         float average = (float)sum / count;
-        printf("Average =%.2f", average);
+        printf("Average = %.2f", average);
     } else {
         printf("Not find number...");
     }

@@ -47,7 +47,7 @@ int main()
                 printf("\nChoose between 1-4 to calculate salary.!!");
                 break;
         }
-    } while(selection != 0);
+    } while (selection != 0);
 
 	getch();
 	return 0;

@@ -17,7 +17,7 @@ int main()
 int Fill(int number)
 {
 	for (int i = 1; i <= number; i += 2) {
-        for (int j = 0; j <(number - i) / 2; j++) {
+        for (int j = 0; j < (number - i) / 2; j++) {
             printf(" ");
             for (int k = 0; k < i; k++)
                 printf("#");
