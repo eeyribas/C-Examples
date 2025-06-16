@@ -2,24 +2,24 @@
 #include <conio.h>
 #include <ctype.h>
 
-void ConvertUppercaseLetter(char *);
+void ConvertUppercaseLetter(char*);
 
 int main()
 {
-	char string[] = "characters and $32.98";
-	printf("Before:%s\n", string);
-	ConvertUppercaseLetter(string);
-	printf("After:%s", string);
+	char str[] = "characters and $32.98";
+	printf("Before:%s\n", str);
+	ConvertUppercaseLetter(str);
+	printf("After:%s", str);
 
 	getch();
 	return 0;
 }
 
-void ConvertUppercaseLetter(char *string)
+void ConvertUppercaseLetter(char *str)
 {
-	while(*string != '\0'){
-		if(islower(*string))
-			*string = toupper(*string);
-		++string;
+	while (*str != '\0') {
+		if (islower(*str))
+			*str = toupper(*str);
+		++str;
 	}
 }

@@ -2,29 +2,27 @@
 #include <conio.h>
 #include <math.h>
 
-double Calc(double, double, double, double);
+double Calculate(double, double, double, double);
 
 int main()
 {
-    double a, b, c, d, disc;
-    printf("Enter x1, y1 =");
-    scanf("%lf %lf", &a, &b);
-    printf("Enter x2, y2 =");
-    scanf("%lf %lf", &c, &d);
-    disc=Calc(a, b, c, d);
-    printf("Distance=%lf", disc);
+    double x1, y1, x2, y2;
+    printf("Enter x1, y1 = ");
+    scanf("%lf %lf", &x1, &y1);
+    printf("Enter x2, y2 = ");
+    scanf("%lf %lf", &x2, &y2);
+    double distance = Calculate(x1, y1, x2, y2);
+    printf("Distance = %lf", distance);
 
     getch();
     return 0;
 }
 
-double Calc(double a, double b, double c, double d)
+double Calculate(double x1, double y1, double x2, double y2)
 {
-	double xk, yk, dis, dist;
-	xk = (a - c) * (a - c);
-	yk = (b - d) * (b * d);
-	dis = xk + yk;
-	dist = sqrt(dis);
+	double xk = (x1 - x2) * (x1 - x2);
+	double yk = (y1 - y2) * (y1 * y2);
+	double distance = sqrt(xk + yk);
 
-	return dist;
+	return distance;
 }

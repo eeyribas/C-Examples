@@ -20,25 +20,25 @@ int main()
 	return 0;
 }
 
-void Card(int a[][13])
+void Card(int array[][13])
 {
 	int row, column;
-	for(int card = 1; card <= 52; card++){
-		do{
+	for (int i = 1; i <= 52; i++) {
+		do {
             row = rand() % 4;
 			column = rand() % 13;
-		} while(a[row][column] != 0);
-		a[row][column] = card;
+		} while (array[row][column] != 0);
+		array[row][column] = i;
 	}
 }
 
-void Distribute(const int a[][13], const char *taraf[], const char *takim[])
+void Distribute(const int array[][13], const char *party[], const char *team[])
 {
-	for(int card = 1; card <= 52; card++){
-       for(int row = 0; row <= 3; row++){
-            for(int column = 0; column <= 12; column++){
-                if(a[row][column] == card)
-					printf("%5s of %-8s%c", taraf[row], takim[column], card%2==0 ? '\n' : '\t');
+	for (int i = 1; i <= 52; i++) {
+       for (int j = 0; j <= 3; j++) {
+            for (int k = 0; k <= 12; k++) {
+                if (array[j][k] == i)
+					printf("%5s of %-8s%c", party[j], team[k], i % 2 == 0 ? '\n' : '\t');
             }
         }
 	}

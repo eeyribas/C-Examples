@@ -12,7 +12,7 @@ int main()
 	srand(time(NULL));
 	int sum = Dice();
 
-	switch (sum){
+	switch (sum) {
         case 7:
         case 11:
             game_state = 1;
@@ -25,19 +25,19 @@ int main()
         default:
             game_state = 0;
             point = sum;
-            printf("Dice : %d dir.\n", point);
+            printf("Dice : %d\n", point);
             break;
 	}
 
-	while(game_state == 0){
+	while (game_state == 0) {
 		sum = Dice();
-		if(sum == point)
+		if (sum == point)
             game_state = 1;
-		else if(sum == 7)
+		else if (sum == 7)
             game_state = 2;
 	}
 
-	if(game_state == 1)
+	if (game_state == 1)
         printf("Gamer win.\n");
 	else
         printf("Gamer loses\n");
@@ -45,7 +45,6 @@ int main()
 	getch();
 	return 0;
 }
-
 
 int Dice()
 {

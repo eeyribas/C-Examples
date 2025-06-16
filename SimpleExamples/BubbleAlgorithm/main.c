@@ -4,64 +4,63 @@
 #define SIZE 10
 
 void Bubble(int[], const int, int(*)(int, int));
-
 int Increase(int, int);
 int Decrease(int, int);
 
 int main()
 {
-	int select, a[SIZE] = {1, 23, 34, 2,3, 12,11, 6, 38, 56};
+	int array[SIZE] = {1, 23, 34, 2, 3, 12, 11, 6, 38, 56};
+	int select;
 
 	printf("Enter '1' increase.\nEnter '2' decrease.\n");
 	scanf("%d", &select);
 
-	printf("\nDatas\n");
-	for(int count = 0; count < SIZE; count++)
-		printf("%5d", a[count]);
+	printf("\nData : ");
+	for (int i = 0; i < SIZE; i++)
+		printf("%5d", array[i]);
+	printf("\n");
 
-	if(select == 1){
-		Bubble(a, SIZE, Decrease);
-		printf("\nDecrease");
-	} else{
-		Bubble(a, SIZE, Increase);
-		printf("\nIncrease");
+	if (select == 1) {
+		Bubble(array, SIZE, Decrease);
+		printf("\nDecrease : ");
+	} else {
+		Bubble(array, SIZE, Increase);
+		printf("\nIncrease : ");
 	}
 
-	for(int count = 0; count < SIZE; count++)
-		printf("%5d", a[count]);
+	for (int i = 0; i < SIZE; i++)
+		printf("%5d", array[i]);
 	printf("\n");
 
 	getch();
 	return 0;
 }
 
-void Bubble(int a[], const int length, int(*compare)(int, int))
+void Bubble(int array[], const int length, int(*compare)(int, int))
 {
-	int tour, count;
 	void ChangeLocation(int*, int*);
 
-	for(tour=1; tour<length; tour++){
-        for(count=0; count<length; count++){
-            if((*compare)(a[count], a[count+1]))
-                ChangeLocation(&a[count], &a[count+1]);
+    for (int i = 1; i < length; i++) {
+        for (int j = 0; j < length; j++) {
+            if ((*compare)(array[j], array[j + 1]))
+                ChangeLocation(&array[j], &array[j + 1]);
         }
     }
 }
 
 void ChangeLocation(int *a, int *b)
 {
-	int tmp;
-	tmp=*a;
-	*a=*b;
-	*b=tmp;
+	int tmp = *a;
+	*a = *b;
+	*b = tmp;
 }
 
 int Increase(int a, int b)
 {
-	return b<a;
+	return b < a;
 }
 
 int Decrease(int a, int b)
 {
-	return a<b;
+    return a < b;
 }

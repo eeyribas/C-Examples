@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1663942889 source:d:\github\c programming\simpleexamples\crapsgame\main.c
-	<stdio.h>
-	<conio.h>
-	<stdlib.h>
-	<time.h>
-
