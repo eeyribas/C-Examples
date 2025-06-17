@@ -5,23 +5,23 @@ void Gcd(int, int);
 
 int main()
 {
-    int a, b;
+    int number_1, number_2;
     printf("First number : ") ;
-    scanf("%d", &a ) ;
+    scanf("%d", &number_1) ;
     printf("Second number : ");
-    scanf("%d", &b);
+    scanf("%d", &number_2);
 
-    Gcd(a, b);
+    Gcd(number_1, number_2);
 
     getch();
     return 0 ;
 }
 
-void Gcd(int a, int b)
+void Gcd(int number_1, int number_2)
 {
-    for(int i = a + b ; i > 0 ; i--){
-        if(a%i == 0 && b%i == 0){
-            printf ( "Gcd : %d\n", i) ;
+    for (int i = number_1 + number_2; i > 0; i--) {
+        if ((number_1 % i == 0) && (number_2 % i == 0)) {
+            printf( "Gcd : %d\n", i);
             break;
         }
     }

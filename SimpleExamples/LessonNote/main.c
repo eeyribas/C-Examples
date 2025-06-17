@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <conio.h>
 
-int Average(int, int);
-void Classify(int);
+int Average(int vize, int finall);
+void Classify(int average);
 
 int main()
 {
@@ -18,24 +18,24 @@ int main()
 	return 0;
 }
 
-int Average(int a, int b)
+int Average(int vize, int finall)
 {
-	int av = (a * 40 / 100) + (b * 60 / 100);
+	int average = (vize * 40 / 100) + (finall * 60 / 100);
 
-	return av;
+	return average;
 }
 
-void Classify(int ave)
+void Classify(int average)
 {
-    if(ave <= 100 && ave >= 90)
-		printf("AA");
-    else if(ave < 90 && ave >= 75)
+    if (average <= 100 && average >= 90)
+        printf("AA");
+    else if (average < 90 && average >= 75)
         printf("BA");
-    else if(ave < 75 && ave >= 65)
+    else if (average < 75 && average >= 65)
 		printf("BB");
-    else if(ave < 65 && ave >= 55)
+    else if (average < 65 && average >= 55)
 		printf("CB");
-    else if(ave < 55 && ave >= 50)
+    else if (average < 55 && average >= 50)
 		printf("CC");
     else
 		printf("FF\n");

@@ -6,6 +6,7 @@ int main()
 {
     printf("Max number: %d.\n", Max(3.0, 5.0));
 
+    getch();
     return 0;
 }
 
