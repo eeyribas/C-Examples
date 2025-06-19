@@ -7,7 +7,7 @@ int main()
 {
 	srand(time(NULL));
 
-	int number = rand() %100 +1;
+	int number = rand() % 100 + 1;
 	int enter;
 
 	for (int i = 1; i < 11; i++) {
@@ -16,7 +16,7 @@ int main()
         do {
             printf("Enter a Number Between 1 and 100 = ");
 			scanf("%d", &enter);
-        } while(!(enter < 100 && enter > 0));
+        } while (!(enter < 100 && enter > 0));
 
 		if (number == enter) {
 			printf("\nCongratulations, correct guess!");

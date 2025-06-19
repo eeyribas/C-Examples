@@ -1,13 +1,14 @@
 #include <stdio.h>
+#include <conio.h>
 
 int main()
 {
-    int distance = 450;
-    int vehicle1_speed = 40;
-    int vehicle2_speed = 65;
-    int vehicle1_location = 120;
-    int vehicle2_location = 0;
+    int vec_speed_1 = 40;
+    int vec_speed_2 = 65;
+    int vec_loc_1 = 120;
+    int vec_loc_2 = 0;
     int hour = 0;
+    int distance = 450;
 
     printf("hour\t\t");
     printf("1.vehicle location\t");
@@ -16,15 +17,15 @@ int main()
 
     do {
         hour++;
-        vehicle1_location += vehicle1_speed;
-        vehicle2_location += vehicle2_speed;
+        vec_loc_1 += vec_speed_1;
+        vec_loc_2 += vec_speed_2;
 
         printf("%d\t\t", hour);
-        (vehicle1_location < distance) ? printf("%d\t\t", vehicle1_location) : printf("have vehicle\t");
-        (vehicle2_location < distance) ? printf("%d", vehicle2_location) : printf("have vehicle");
+        (vec_loc_1 < distance) ? printf("%d\t\t", vec_loc_1) : printf("have vehicle\t");
+        (vec_loc_2 < distance) ? printf("%d", vec_loc_2) : printf("have vehicle");
         printf("\n");
-    } while(vehicle1_location < distance || vehicle2_location < distance);
+    } while (vec_loc_1 < distance || vec_loc_2 < distance);
 
+    getch();
     return 0;
 }
-

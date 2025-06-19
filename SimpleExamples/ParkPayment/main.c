@@ -1,29 +1,29 @@
-#include<stdio.h>
-#include<conio.h>
-#include<math.h>
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
 
-int Calc(int);
+int Calc(int hour);
 
 int main()
 {
 	int hour;
-	do{
-        printf("Hour=");
+	do {
+        printf("Hour = ");
         scanf("%d", &hour);
         printf("Payment = %d $\n\n", Calc(hour));
-	} while(hour != 0);
+	} while (hour != 0);
 
 	getch();
 	return 0;
 }
 
-int Calc(int a)
+int Calc(int hour)
 {
 	double pay;
-	if(a <= 3)
+	if (hour <= 3)
         pay = 2;
-	else if(a < 24)
-        pay = 2 + ((a-3)*1);
+	else if (hour < 24)
+        pay = 2 + ((hour - 3) * 1);
 	else
         pay = 25;
 

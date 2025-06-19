@@ -10,7 +10,7 @@ int main()
     scanf("%d", &r);
 
     int env = 2 * PI * r;
-    int area = PI * r* r;
+    int area = PI * r * r;
     int volume = 4 * PI * r * r / 3;
     printf("Environment = %d\n", env);
     printf("Area = %d\n", area);
